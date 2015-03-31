@@ -1,0 +1,44 @@
+2015-03-31 11:51:06,760 [main            ] [          ] INFO  org.eclipse.jetty.server.Server - jetty-8.1.8.v20121106
+2015-03-31 11:51:07,213 [main            ] [          ] INFO  restx.RestxMainRouterFactory - LOADING MAIN ROUTER
+2015-03-31 11:51:07,221 [main            ] [          ] INFO  restx.RestxMainRouterFactory - 
+--------------------------------------
+ -- RESTX >> LOAD ON REQUEST << >> DEV MODE << >> AUTO COMPILE <<
+ -- for admin console,
+ --   VISIT http://127.0.0.1:8080/api/@/ui/
+ --
+
+2015-03-31 11:51:08,731 [pool-1-thread-1 ] [          ] INFO  restx.classloader.CompilationManager - compilation finished: 5 sources compiled in 1.394 s
+2015-03-31 11:51:09,350 [main            ] [          ] INFO  restx.classloader.CompilationManager - watching for changes in [src/main/java, src/main/resources]; current location is /Users/brendanshort/Projects/6point6 Internal/pothole-management-api/.
+2015-03-31 11:51:09,379 [main            ] [          ] INFO  restx.monitor.MetricsConfiguration - registering Metrics JVM metrics
+2015-03-31 11:51:20,513 [qtp1693847660-22] [          ] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.0.1.Final
+2015-03-31 11:51:20,665 [qtp1693847660-22] [          ] INFO  restx.RestxMainRouterFactory - [RESTX REQUEST] GET /@/ui/ - per request factory created in 407.5 ms
+2015-03-31 11:51:20,970 [qtp1693847660-25] [          ] INFO  restx.RestxMainRouterFactory - [RESTX REQUEST] GET /@/webjars/angularjs/1.0.8/angular.min.js - per request factory created in 205.5 ms
+2015-03-31 11:51:20,974 [qtp1693847660-21] [          ] INFO  restx.RestxMainRouterFactory - [RESTX REQUEST] GET /@/ui/css/admin.css - per request factory created in 274.5 ms
+2015-03-31 11:51:20,986 [qtp1693847660-22] [          ] INFO  restx.RestxMainRouterFactory - [RESTX REQUEST] GET /@/ui/css/bootstrap.min.css - per request factory created in 292.5 ms
+2015-03-31 11:51:20,985 [qtp1693847660-24] [          ] INFO  restx.RestxMainRouterFactory - [RESTX REQUEST] GET /@/webjars/bootstrap/2.3.0/js/bootstrap.min.js - per request factory created in 220.7 ms
+2015-03-31 11:51:20,981 [qtp1693847660-23] [          ] INFO  restx.RestxMainRouterFactory - [RESTX REQUEST] GET /@/webjars/jquery/1.9.1/jquery.min.js - per request factory created in 262.4 ms
+2015-03-31 11:51:20,991 [qtp1693847660-26] [          ] INFO  restx.RestxMainRouterFactory - [RESTX REQUEST] GET /@/webjars/angularjs/1.0.8/angular-resource.min.js - per request factory created in 234.5 ms
+2015-03-31 11:51:21,380 [qtp1693847660-24] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /@/pages >> UNAUTHORIZED - 3.488 ms
+2015-03-31 11:51:21,414 [qtp1693847660-22] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /sessions/current >> UNAUTHORIZED - 1.232 ms
+2015-03-31 11:51:27,792 [qtp1693847660-22] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] POST /sessions >> OK - 281.3 ms
+2015-03-31 11:51:28,206 [qtp1693847660-25] [admin     ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /@/pages >> OK - 38.84 ms
+2015-03-31 11:51:28,253 [qtp1693847660-24] [admin     ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /sessions/current >> OK - 81.17 ms
+2015-03-31 11:51:33,742 [qtp1693847660-27] [admin     ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /sessions/current >> OK - 11.68 ms
+2015-03-31 11:51:33,823 [qtp1693847660-26] [admin     ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /@/pages >> OK - 38.41 ms
+2015-03-31 11:51:33,906 [qtp1693847660-26] [admin     ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /@/pages >> OK - 10.36 ms
+2015-03-31 11:51:33,931 [qtp1693847660-27] [admin     ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /sessions/current >> OK - 23.34 ms
+2015-03-31 11:51:33,988 [qtp1693847660-23] [admin     ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /@/api-docs >> OK - 94.49 ms
+2015-03-31 11:51:34,142 [qtp1693847660-22] [admin     ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /@/api-docs/admin-pages >> OK - 109.4 ms
+2015-03-31 11:51:34,144 [qtp1693847660-24] [admin     ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /@/api-docs/messages >> OK - 44.13 ms
+2015-03-31 11:51:34,144 [qtp1693847660-25] [admin     ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /@/api-docs/hello >> OK - 113.4 ms
+2015-03-31 11:51:34,238 [qtp1693847660-27] [admin     ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /@/api-docs/config >> OK - 101.0 ms
+2015-03-31 11:51:34,263 [qtp1693847660-21] [admin     ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /@/api-docs/json-schema >> OK - 182.7 ms
+2015-03-31 11:51:34,263 [qtp1693847660-22] [admin     ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /@/api-docs/messages-admin >> OK - 42.61 ms
+2015-03-31 11:51:34,266 [qtp1693847660-24] [admin     ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /@/api-docs/metrics >> OK - 42.86 ms
+2015-03-31 11:51:34,306 [qtp1693847660-26] [admin     ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /@/api-docs/specs >> OK - 210.2 ms
+2015-03-31 11:51:34,403 [qtp1693847660-27] [admin     ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /@/api-docs/monitor >> OK - 83.63 ms
+2015-03-31 11:51:34,418 [qtp1693847660-25] [admin     ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /@/api-docs/session >> OK - 78.73 ms
+2015-03-31 11:51:34,435 [qtp1693847660-24] [admin     ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /@/api-docs/sessions >> OK - 99.00 ms
+2015-03-31 11:51:34,461 [qtp1693847660-23] [admin     ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /@/api-docs/log-admin >> OK - 104.6 ms
+2015-03-31 11:51:44,379 [Thread-1        ] [          ] INFO  o.e.j.s.listener.ELContextCleaner - javax.el.BeanELResolver purged
+2015-03-31 11:51:44,438 [Thread-1        ] [          ] INFO  o.e.jetty.util.thread.ShutdownThread - shutdown already commenced

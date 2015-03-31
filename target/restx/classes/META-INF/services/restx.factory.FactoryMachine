@@ -1,0 +1,3 @@
+pothole.management.api.AppModuleFactoryMachine
+pothole.management.api.rest.HelloResourceFactoryMachine
+pothole.management.api.rest.HelloResourceRouterFactoryMachine
