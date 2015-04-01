@@ -12,10 +12,17 @@ public class Pothole {
 
     private String location;
     DateTime dateReported;
+
     DateTime fixedDate;
 
     public Pothole(String location){
         this.location = location;
+        this.dateReported = DateTime.now();
+        this.fixedDate = null;
+    }
+
+    //Introducing the dummy constructor
+    public Pothole() {
         this.dateReported = DateTime.now();
         this.fixedDate = null;
     }
@@ -61,7 +68,7 @@ public class Pothole {
         return "City{" +
                 "key='" + key +'\'' +
                 ", location='" + location + '\'' +
-                ", dateReported='" + dateReported + '\'' +
+                ", dateReported='" + dateReported.toString() + '\'' +
                 '}';
     }
 }
