@@ -1,29 +1,32 @@
 package pothole.management.api.domain;
 
-import org.joda.time.DateTime;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import org.jongo.marshall.jackson.oid.Id;
 import org.jongo.marshall.jackson.oid.ObjectId;
-
 import java.util.Date;
 
+@JsonInclude(JsonInclude.Include.NON_EMPTY)
 public class Pothole {
     @Id @ObjectId
     private String key;
 
     private String location;
-    DateTime dateReported;
+    Date dateReported;
 
-    DateTime fixedDate;
+    //Todo: Figure out how to get this to work if fixedDate is null
+    @JsonIgnore
+    Date fixedDate;
 
     public Pothole(String location){
         this.location = location;
-        this.dateReported = DateTime.now();
-        this.fixedDate = null;
+        this.dateReported = new Date();
+        this.fixedDate = new Date();
     }
 
     //Introducing the dummy constructor
     public Pothole() {
-        this.dateReported = DateTime.now();
+        this.dateReported = new Date();
         this.fixedDate = null;
     }
 
@@ -49,7 +52,7 @@ public class Pothole {
         return dateReported.toString();
     }
 
-    public Pothole setDateReported(final DateTime dateReported){
+    public Pothole setDateReported(final Date dateReported){
         this.dateReported = dateReported;
         return this;
     }
@@ -58,7 +61,7 @@ public class Pothole {
         return fixedDate.toString();
     }
 
-    public Pothole setFixedDate(final DateTime fixedDate){
+    public Pothole setFixedDate(final Date fixedDate){
         this.fixedDate = fixedDate;
         return this;
     }

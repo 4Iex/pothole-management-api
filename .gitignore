@@ -2,3 +2,4 @@
 *.iml
 target
 logs/app.log
+logs
