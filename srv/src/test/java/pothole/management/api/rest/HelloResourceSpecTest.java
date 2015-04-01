@@ -1,6 +1,5 @@
 package pothole.management.api.rest;
 
-import pothole.management.api.AppServer;
 import org.junit.runner.RunWith;
 import restx.tests.RestxSpecTestsRunner;
 import restx.tests.FindSpecsIn;

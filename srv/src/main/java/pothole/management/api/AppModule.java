@@ -7,6 +7,7 @@ import restx.factory.Provides;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.base.Charsets;
 import com.google.common.collect.ImmutableSet;
+import restx.mongo.MongoModule;
 import restx.security.*;
 import restx.factory.Module;
 import restx.factory.Provides;
@@ -70,5 +71,10 @@ public class AppModule {
                         true),
                 credentialsStrategy, defaultAdminPasswordHash),
                 securitySettings);
+    }
+
+    @Provides @Named(MongoModule.MONGO_DB_NAME)
+    public String dbName() {
+        return "restx-testdb";
     }
 }

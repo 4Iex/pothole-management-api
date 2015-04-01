@@ -53,6 +53,7 @@ public class HelloResource {
         public String getValue(){ return value; }
         public void setValue(String value){ this.value = value; }
     }
+
     @POST("/mypojo")
     @PermitAll
     public MyPOJO helloPojo(MyPOJO pojo){

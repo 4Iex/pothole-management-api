@@ -109,6 +109,11 @@
             <version>4.11</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>io.restx</groupId>
+            <artifactId>restx-jongo</artifactId>
+            <version>${restx.version}</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
