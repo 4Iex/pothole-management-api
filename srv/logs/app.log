@@ -5645,3 +5645,841 @@ Caused by: java.lang.NullPointerException: null
 2015-04-01 15:26:20,843 [pool-2-thread-1 ] [          ] INFO  restx.classloader.CompilationManager - compilation finished: 1 sources compiled in 113.9 ms
 2015-04-01 15:26:32,745 [Thread-1        ] [          ] INFO  o.e.j.s.listener.ELContextCleaner - javax.el.BeanELResolver purged
 2015-04-01 15:26:32,797 [Thread-1        ] [          ] INFO  o.e.jetty.util.thread.ShutdownThread - shutdown already commenced
+2015-04-01 15:33:12,627 [main            ] [          ] INFO  org.eclipse.jetty.server.Server - jetty-8.1.8.v20121106
+2015-04-01 15:33:13,137 [main            ] [          ] INFO  restx.RestxMainRouterFactory - LOADING MAIN ROUTER
+2015-04-01 15:33:13,143 [main            ] [          ] INFO  restx.RestxMainRouterFactory - 
+--------------------------------------
+ -- RESTX >> LOAD ON REQUEST << >> DEV MODE << >> AUTO COMPILE <<
+ -- for admin console,
+ --   VISIT http://127.0.0.1:8080/api/@/ui/
+ --
+
+2015-04-01 15:33:13,373 [main            ] [          ] INFO  restx.classloader.CompilationManager - watching for changes in [src/main/java, src/main/resources]; current location is /Users/brendanshort/Projects/6point6 Internal/pothole-management-api/srv/.
+2015-04-01 15:33:14,503 [main            ] [          ] INFO  restx.monitor.MetricsConfiguration - registering Metrics JVM metrics
+2015-04-01 15:33:14,515 [main            ] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 15:33:33,071 [qtp532854629-23 ] [          ] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.0.1.Final
+2015-04-01 15:33:33,193 [qtp532854629-23 ] [          ] INFO  restx.RestxMainRouterFactory - [RESTX REQUEST] POST /potholes - per request factory created in 303.8 ms
+2015-04-01 15:33:33,376 [qtp532854629-23 ] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] POST /potholes >> OK - 182.6 ms
+2015-04-01 15:33:36,044 [qtp532854629-23 ] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /potholes >> OK - 27.67 ms
+2015-04-01 15:36:44,603 [pool-2-thread-1 ] [          ] INFO  restx.classloader.CompilationManager - compilation finished: 1 sources compiled in 1.113 s
+2015-04-01 15:36:53,086 [qtp532854629-26 ] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /potholes/551bd33d77c8717dbcd0e095 >> OK - 19.92 ms
+2015-04-01 15:37:00,419 [qtp532854629-26 ] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /potholes/551bd2a877c8717dbcd0e093 >> OK - 3.680 ms
+2015-04-01 15:37:46,176 [qtp532854629-28 ] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /potholes >> OK - 14.40 ms
+2015-04-01 15:37:54,782 [qtp532854629-28 ] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /potholes ? location=xyz >> OK - 6.037 ms
+2015-04-01 15:38:09,463 [qtp532854629-28 ] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /potholes ? location=albert >> OK - 1.867 ms
+2015-04-01 15:39:27,136 [qtp532854629-30 ] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /potholes >> OK - 16.63 ms
+2015-04-01 15:39:34,512 [qtp532854629-30 ] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /potholes ? location=albert >> OK - 1.192 ms
+2015-04-01 15:39:37,095 [qtp532854629-30 ] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /potholes ? location=Albert Hall >> OK - 4.173 ms
+2015-04-01 15:49:14,422 [Thread-1        ] [          ] INFO  o.e.j.s.listener.ELContextCleaner - javax.el.BeanELResolver purged
+2015-04-01 15:49:14,479 [Thread-1        ] [          ] INFO  o.e.jetty.util.thread.ShutdownThread - shutdown already commenced
+2015-04-01 15:57:33,835 [main            ] [          ] INFO  org.eclipse.jetty.server.Server - jetty-8.1.8.v20121106
+2015-04-01 15:57:34,074 [main            ] [          ] INFO  restx.RestxMainRouterFactory - LOADING MAIN ROUTER
+2015-04-01 15:57:34,075 [main            ] [          ] INFO  restx.RestxMainRouterFactory - 
+--------------------------------------
+ -- RESTX >> LOAD ON REQUEST << >> CLEAN << >> TEST MODE <<
+ -- for admin console,
+ --   VISIT http://127.0.0.1:61287/api/@/ui/
+ --
+
+2015-04-01 15:57:35,075 [qtp1839168128-14] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 15:57:35,191 [qtp1839168128-14] [          ] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.0.1.Final
+2015-04-01 15:57:35,318 [qtp1839168128-14] [          ] INFO  restx.RestxMainRouterFactory - [RESTX REQUEST] GET /hello ? who=xavier - per request factory created in 962.7 ms
+2015-04-01 15:57:35,334 [qtp1839168128-14] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /hello ? who=xavier >> OK - 15.28 ms
+2015-04-01 15:57:35,720 [qtp1839168128-14] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 15:57:35,739 [qtp1839168128-14] [          ] INFO  restx.RestxMainRouterFactory - [RESTX REQUEST] GET /message - per request factory created in 268.1 ms
+2015-04-01 15:57:35,778 [qtp1839168128-14] [user1     ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /message >> OK - 37.76 ms
+2015-04-01 15:57:36,074 [qtp1839168128-14] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 15:57:36,108 [qtp1839168128-14] [admin     ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /message >> OK - 9.997 ms
+2015-04-01 15:57:36,448 [qtp1839168128-14] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 15:57:36,483 [qtp1839168128-14] [user2     ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /message >> FORBIDDEN - 9.171 ms
+2015-04-01 15:57:36,792 [qtp1839168128-18] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 15:57:36,933 [qtp1839168128-18] [user1     ] WARN  restx.StdRestxMainRouter - request raised IllegalArgumentException: ConstraintViolationImpl{interpolatedMessage='may not be null', propertyPath=value, rootBeanClass=class pothole.management.api.rest.HelloResource$MyPOJO, messageTemplate='{javax.validation.constraints.NotNull.message}'}
+java.lang.IllegalArgumentException: ConstraintViolationImpl{interpolatedMessage='may not be null', propertyPath=value, rootBeanClass=class pothole.management.api.rest.HelloResource$MyPOJO, messageTemplate='{javax.validation.constraints.NotNull.message}'}
+	at restx.validation.Validations.checkValid(Validations.java:34) ~[restx-core-0.34.jar:na]
+	at pothole.management.api.rest.HelloResourceRouter$3.doRoute(HelloResourceRouter.java:103) ~[classes/:na]
+	at pothole.management.api.rest.HelloResourceRouter$3.doRoute(HelloResourceRouter.java:98) ~[classes/:na]
+	at restx.entity.StdEntityRoute.handle(StdEntityRoute.java:139) ~[restx-core-0.34.jar:na]
+	at restx.RestxHandlerMatch.handle(RestxHandlerMatch.java:56) ~[restx-core-0.34.jar:na]
+	at restx.ResponseCloserFilter.handle(ResponseCloserFilter.java:28) ~[restx-core-0.34.jar:na]
+	at restx.RestxHandlerMatch.handle(RestxHandlerMatch.java:56) ~[restx-core-0.34.jar:na]
+	at restx.CacheFilter$1.handle(CacheFilter.java:51) ~[restx-core-0.34.jar:na]
+	at restx.RestxHandlerMatch.handle(RestxHandlerMatch.java:56) ~[restx-core-0.34.jar:na]
+	at restx.security.RestxSessionLogFilter.handle(RestxSessionLogFilter.java:43) ~[restx-core-0.34.jar:na]
+	at restx.RestxHandlerMatch.handle(RestxHandlerMatch.java:56) ~[restx-core-0.34.jar:na]
+	at restx.security.RestxSessionCookieFilter.handle(RestxSessionCookieFilter.java:96) ~[restx-core-0.34.jar:na]
+	at restx.RestxHandlerMatch.handle(RestxHandlerMatch.java:56) ~[restx-core-0.34.jar:na]
+	at restx.stats.RestxStatsCollectionFilter.handle(RestxStatsCollectionFilter.java:39) ~[restx-stats-admin-0.34.jar:na]
+	at restx.RestxHandlerMatch.handle(RestxHandlerMatch.java:56) ~[restx-core-0.34.jar:na]
+	at restx.StdRestxMainRouter.route(StdRestxMainRouter.java:152) ~[restx-core-0.34.jar:na]
+	at restx.RestxMainRouterFactory$PerRequestFactoryLoader.route(RestxMainRouterFactory.java:228) [restx-core-0.34.jar:na]
+	at restx.RestxMainRouterFactory$RecordingMainRouter.route(RestxMainRouterFactory.java:185) [restx-core-0.34.jar:na]
+	at restx.servlet.AbstractRestxMainRouterServlet.service(AbstractRestxMainRouterServlet.java:48) [restx-servlet-0.34.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:770) [javax.servlet-api-3.0.1.jar:3.0.1]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:669) [jetty-servlet-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455) [jetty-servlet-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:536) [jetty-security-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382) [jetty-servlet-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.handler.HandlerList.handle(HandlerList.java:52) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.Server.handle(Server.java:365) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856) [jetty-http-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240) [jetty-http-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628) [jetty-io-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52) [jetty-io-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608) [jetty-util-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543) [jetty-util-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_40]
+2015-04-01 15:57:36,935 [qtp1839168128-18] [user1     ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] POST /mypojo >> BAD_REQUEST - 124.3 ms
+2015-04-01 15:57:37,308 [qtp1839168128-14] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 15:57:37,349 [qtp1839168128-14] [user1     ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] POST /mypojo >> OK - 13.82 ms
+2015-04-01 15:57:37,372 [main            ] [          ] INFO  o.e.j.s.listener.ELContextCleaner - javax.el.BeanELResolver purged
+2015-04-01 15:57:37,476 [main            ] [          ] WARN  o.e.j.util.thread.QueuedThreadPool - 1 threads could not be stopped
+2015-04-01 15:57:37,476 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool - Couldn't stop Thread[qtp1839168128-14,5,main]
+2015-04-01 15:57:37,477 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at java.net.SocketInputStream.socketRead0(Native Method)
+2015-04-01 15:57:37,477 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+2015-04-01 15:57:37,477 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at java.net.SocketInputStream.read(SocketInputStream.java:170)
+2015-04-01 15:57:37,478 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at java.net.SocketInputStream.read(SocketInputStream.java:141)
+2015-04-01 15:57:37,478 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+2015-04-01 15:57:37,478 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+2015-04-01 15:57:37,478 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+2015-04-01 15:57:37,478 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:704)
+2015-04-01 15:57:37,478 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:647)
+2015-04-01 15:57:37,479 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1535)
+2015-04-01 15:57:37,479 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1440)
+2015-04-01 15:57:37,479 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+2015-04-01 15:57:37,479 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at com.github.kevinsawicki.http.HttpRequest.code(HttpRequest.java:1494)
+2015-04-01 15:57:37,479 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at restx.stats.RestxStatsCollector.shareStats(RestxStatsCollector.java:296)
+2015-04-01 15:57:37,480 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at restx.stats.RestxStatsCollector.close(RestxStatsCollector.java:407)
+2015-04-01 15:57:37,480 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at restx.factory.BoundlessComponentBox.close(BoundlessComponentBox.java:43)
+2015-04-01 15:57:37,480 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at restx.factory.StdWarehouse.close(StdWarehouse.java:98)
+2015-04-01 15:57:37,480 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at restx.factory.Factory.close(Factory.java:862)
+2015-04-01 15:57:37,480 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at restx.RestxMainRouterFactory$PerRequestFactoryLoader.route(RestxMainRouterFactory.java:240)
+2015-04-01 15:57:37,480 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at restx.RestxMainRouterFactory$RecordingMainRouter.route(RestxMainRouterFactory.java:185)
+2015-04-01 15:57:37,481 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at restx.servlet.AbstractRestxMainRouterServlet.service(AbstractRestxMainRouterServlet.java:48)
+2015-04-01 15:57:37,481 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at javax.servlet.http.HttpServlet.service(HttpServlet.java:770)
+2015-04-01 15:57:37,481 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:669)
+2015-04-01 15:57:37,481 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455)
+2015-04-01 15:57:37,481 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+2015-04-01 15:57:37,481 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:536)
+2015-04-01 15:57:37,481 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+2015-04-01 15:57:37,481 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+2015-04-01 15:57:37,481 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+2015-04-01 15:57:37,481 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+2015-04-01 15:57:37,482 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+2015-04-01 15:57:37,482 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+2015-04-01 15:57:37,482 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.server.handler.HandlerList.handle(HandlerList.java:52)
+2015-04-01 15:57:37,482 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+2015-04-01 15:57:37,482 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+2015-04-01 15:57:37,482 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.server.Server.handle(Server.java:365)
+2015-04-01 15:57:37,482 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+2015-04-01 15:57:37,483 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+2015-04-01 15:57:37,483 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+2015-04-01 15:57:37,483 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+2015-04-01 15:57:37,483 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+2015-04-01 15:57:37,483 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+2015-04-01 15:57:37,484 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+2015-04-01 15:57:37,484 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+2015-04-01 15:57:37,484 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+2015-04-01 15:57:37,484 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+2015-04-01 15:57:37,484 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at java.lang.Thread.run(Thread.java:745)
+2015-04-01 16:06:12,389 [main            ] [          ] INFO  org.eclipse.jetty.server.Server - jetty-8.1.8.v20121106
+2015-04-01 16:06:12,588 [main            ] [          ] INFO  restx.RestxMainRouterFactory - LOADING MAIN ROUTER
+2015-04-01 16:06:12,588 [main            ] [          ] INFO  restx.RestxMainRouterFactory - 
+--------------------------------------
+ -- RESTX >> LOAD ON REQUEST << >> CLEAN << >> TEST MODE <<
+ -- for admin console,
+ --   VISIT http://127.0.0.1:61389/api/@/ui/
+ --
+
+2015-04-01 16:06:13,693 [qtp1495608502-14] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 16:06:13,810 [qtp1495608502-14] [          ] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.0.1.Final
+2015-04-01 16:06:13,930 [qtp1495608502-14] [          ] INFO  restx.RestxMainRouterFactory - [RESTX REQUEST] GET /hello ? who=xavier - per request factory created in 1.111 s
+2015-04-01 16:06:13,950 [qtp1495608502-14] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /hello ? who=xavier >> OK - 19.41 ms
+2015-04-01 16:06:14,683 [qtp1495608502-14] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 16:06:14,714 [qtp1495608502-14] [          ] INFO  restx.RestxMainRouterFactory - [RESTX REQUEST] GET /message - per request factory created in 629.5 ms
+2015-04-01 16:06:14,748 [qtp1495608502-14] [user1     ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /message >> OK - 32.22 ms
+2015-04-01 16:06:15,645 [qtp1495608502-14] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 16:06:15,666 [qtp1495608502-14] [          ] INFO  restx.RestxMainRouterFactory - [RESTX REQUEST] GET /message - per request factory created in 478.3 ms
+2015-04-01 16:06:15,684 [qtp1495608502-14] [admin     ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /message >> OK - 16.82 ms
+2015-04-01 16:06:16,624 [qtp1495608502-14] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 16:06:16,650 [qtp1495608502-14] [          ] INFO  restx.RestxMainRouterFactory - [RESTX REQUEST] GET /message - per request factory created in 471.2 ms
+2015-04-01 16:06:16,658 [qtp1495608502-14] [user2     ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /message >> FORBIDDEN - 7.487 ms
+2015-04-01 16:06:17,715 [qtp1495608502-17] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 16:06:17,730 [qtp1495608502-17] [          ] INFO  restx.RestxMainRouterFactory - [RESTX REQUEST] POST /mypojo - per request factory created in 606.5 ms
+2015-04-01 16:06:17,804 [qtp1495608502-17] [user1     ] WARN  restx.StdRestxMainRouter - request raised IllegalArgumentException: ConstraintViolationImpl{interpolatedMessage='may not be null', propertyPath=value, rootBeanClass=class pothole.management.api.rest.HelloResource$MyPOJO, messageTemplate='{javax.validation.constraints.NotNull.message}'}
+java.lang.IllegalArgumentException: ConstraintViolationImpl{interpolatedMessage='may not be null', propertyPath=value, rootBeanClass=class pothole.management.api.rest.HelloResource$MyPOJO, messageTemplate='{javax.validation.constraints.NotNull.message}'}
+	at restx.validation.Validations.checkValid(Validations.java:34) ~[restx-core-0.34.jar:na]
+	at pothole.management.api.rest.HelloResourceRouter$3.doRoute(HelloResourceRouter.java:103) ~[classes/:na]
+	at pothole.management.api.rest.HelloResourceRouter$3.doRoute(HelloResourceRouter.java:98) ~[classes/:na]
+	at restx.entity.StdEntityRoute.handle(StdEntityRoute.java:139) ~[restx-core-0.34.jar:na]
+	at restx.RestxHandlerMatch.handle(RestxHandlerMatch.java:56) ~[restx-core-0.34.jar:na]
+	at restx.ResponseCloserFilter.handle(ResponseCloserFilter.java:28) ~[restx-core-0.34.jar:na]
+	at restx.RestxHandlerMatch.handle(RestxHandlerMatch.java:56) ~[restx-core-0.34.jar:na]
+	at restx.CacheFilter$1.handle(CacheFilter.java:51) ~[restx-core-0.34.jar:na]
+	at restx.RestxHandlerMatch.handle(RestxHandlerMatch.java:56) ~[restx-core-0.34.jar:na]
+	at restx.security.RestxSessionLogFilter.handle(RestxSessionLogFilter.java:43) ~[restx-core-0.34.jar:na]
+	at restx.RestxHandlerMatch.handle(RestxHandlerMatch.java:56) ~[restx-core-0.34.jar:na]
+	at restx.security.RestxSessionCookieFilter.handle(RestxSessionCookieFilter.java:96) ~[restx-core-0.34.jar:na]
+	at restx.RestxHandlerMatch.handle(RestxHandlerMatch.java:56) ~[restx-core-0.34.jar:na]
+	at restx.stats.RestxStatsCollectionFilter.handle(RestxStatsCollectionFilter.java:39) ~[restx-stats-admin-0.34.jar:na]
+	at restx.RestxHandlerMatch.handle(RestxHandlerMatch.java:56) ~[restx-core-0.34.jar:na]
+	at restx.StdRestxMainRouter.route(StdRestxMainRouter.java:152) ~[restx-core-0.34.jar:na]
+	at restx.RestxMainRouterFactory$PerRequestFactoryLoader.route(RestxMainRouterFactory.java:228) [restx-core-0.34.jar:na]
+	at restx.RestxMainRouterFactory$RecordingMainRouter.route(RestxMainRouterFactory.java:185) [restx-core-0.34.jar:na]
+	at restx.servlet.AbstractRestxMainRouterServlet.service(AbstractRestxMainRouterServlet.java:48) [restx-servlet-0.34.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:770) [javax.servlet-api-3.0.1.jar:3.0.1]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:669) [jetty-servlet-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455) [jetty-servlet-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:536) [jetty-security-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382) [jetty-servlet-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.handler.HandlerList.handle(HandlerList.java:52) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.Server.handle(Server.java:365) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856) [jetty-http-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240) [jetty-http-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628) [jetty-io-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52) [jetty-io-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608) [jetty-util-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543) [jetty-util-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_40]
+2015-04-01 16:06:17,806 [qtp1495608502-17] [user1     ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] POST /mypojo >> BAD_REQUEST - 75.21 ms
+2015-04-01 16:06:18,784 [qtp1495608502-14] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 16:06:18,804 [qtp1495608502-14] [          ] INFO  restx.RestxMainRouterFactory - [RESTX REQUEST] POST /mypojo - per request factory created in 488.8 ms
+2015-04-01 16:06:18,818 [qtp1495608502-14] [user1     ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] POST /mypojo >> OK - 13.80 ms
+2015-04-01 16:06:18,843 [main            ] [          ] INFO  o.e.j.s.listener.ELContextCleaner - javax.el.BeanELResolver purged
+2015-04-01 16:06:18,946 [main            ] [          ] WARN  o.e.j.util.thread.QueuedThreadPool - 1 threads could not be stopped
+2015-04-01 16:06:18,947 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool - Couldn't stop Thread[qtp1495608502-14,5,main]
+2015-04-01 16:06:18,947 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at java.net.SocketInputStream.socketRead0(Native Method)
+2015-04-01 16:06:18,948 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+2015-04-01 16:06:18,948 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at java.net.SocketInputStream.read(SocketInputStream.java:170)
+2015-04-01 16:06:18,948 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at java.net.SocketInputStream.read(SocketInputStream.java:141)
+2015-04-01 16:06:18,948 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+2015-04-01 16:06:18,948 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+2015-04-01 16:06:18,948 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+2015-04-01 16:06:18,948 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:704)
+2015-04-01 16:06:18,949 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:647)
+2015-04-01 16:06:18,949 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1535)
+2015-04-01 16:06:18,949 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1440)
+2015-04-01 16:06:18,949 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+2015-04-01 16:06:18,949 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at com.github.kevinsawicki.http.HttpRequest.code(HttpRequest.java:1494)
+2015-04-01 16:06:18,949 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at restx.stats.RestxStatsCollector.shareStats(RestxStatsCollector.java:296)
+2015-04-01 16:06:18,950 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at restx.stats.RestxStatsCollector.close(RestxStatsCollector.java:407)
+2015-04-01 16:06:18,950 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at restx.factory.BoundlessComponentBox.close(BoundlessComponentBox.java:43)
+2015-04-01 16:06:18,950 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at restx.factory.StdWarehouse.close(StdWarehouse.java:98)
+2015-04-01 16:06:18,950 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at restx.factory.Factory.close(Factory.java:862)
+2015-04-01 16:06:18,950 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at restx.RestxMainRouterFactory$PerRequestFactoryLoader.route(RestxMainRouterFactory.java:240)
+2015-04-01 16:06:18,950 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at restx.RestxMainRouterFactory$RecordingMainRouter.route(RestxMainRouterFactory.java:185)
+2015-04-01 16:06:18,950 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at restx.servlet.AbstractRestxMainRouterServlet.service(AbstractRestxMainRouterServlet.java:48)
+2015-04-01 16:06:18,951 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at javax.servlet.http.HttpServlet.service(HttpServlet.java:770)
+2015-04-01 16:06:18,951 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:669)
+2015-04-01 16:06:18,951 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455)
+2015-04-01 16:06:18,951 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+2015-04-01 16:06:18,951 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:536)
+2015-04-01 16:06:18,951 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+2015-04-01 16:06:18,951 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+2015-04-01 16:06:18,952 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+2015-04-01 16:06:18,952 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+2015-04-01 16:06:18,952 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+2015-04-01 16:06:18,952 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+2015-04-01 16:06:18,952 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.server.handler.HandlerList.handle(HandlerList.java:52)
+2015-04-01 16:06:18,952 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+2015-04-01 16:06:18,952 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+2015-04-01 16:06:18,953 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.server.Server.handle(Server.java:365)
+2015-04-01 16:06:18,953 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+2015-04-01 16:06:18,953 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+2015-04-01 16:06:18,953 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+2015-04-01 16:06:18,953 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+2015-04-01 16:06:18,953 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+2015-04-01 16:06:18,953 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+2015-04-01 16:06:18,953 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+2015-04-01 16:06:18,954 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+2015-04-01 16:06:18,954 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+2015-04-01 16:06:18,954 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+2015-04-01 16:06:18,954 [main            ] [          ] INFO  o.e.j.util.thread.QueuedThreadPool -  at java.lang.Thread.run(Thread.java:745)
+2015-04-01 16:06:18,959 [main            ] [          ] INFO  org.eclipse.jetty.server.Server - jetty-8.1.8.v20121106
+2015-04-01 16:06:19,017 [main            ] [          ] INFO  restx.RestxMainRouterFactory - LOADING MAIN ROUTER
+2015-04-01 16:06:19,017 [main            ] [          ] INFO  restx.RestxMainRouterFactory - 
+--------------------------------------
+ -- RESTX >> LOAD ON REQUEST << >> CLEAN << >> TEST MODE <<
+ -- for admin console,
+ --   VISIT http://127.0.0.1:61393/api/@/ui/
+ --
+
+2015-04-01 16:06:19,044 [main            ] [          ] INFO  o.e.j.s.listener.ELContextCleaner - javax.el.BeanELResolver purged
+2015-04-01 16:08:21,981 [main            ] [          ] INFO  org.eclipse.jetty.server.Server - jetty-8.1.8.v20121106
+2015-04-01 16:08:22,165 [main            ] [          ] INFO  restx.RestxMainRouterFactory - LOADING MAIN ROUTER
+2015-04-01 16:08:22,166 [main            ] [          ] INFO  restx.RestxMainRouterFactory - 
+--------------------------------------
+ -- RESTX >> LOAD ON REQUEST << >> CLEAN << >> TEST MODE <<
+ -- for admin console,
+ --   VISIT http://127.0.0.1:61422/api/@/ui/
+ --
+
+2015-04-01 16:08:22,281 [main            ] [          ] INFO  o.e.j.s.listener.ELContextCleaner - javax.el.BeanELResolver purged
+2015-04-01 16:09:21,292 [main            ] [          ] INFO  org.eclipse.jetty.server.Server - jetty-8.1.8.v20121106
+2015-04-01 16:09:21,541 [main            ] [          ] INFO  restx.RestxMainRouterFactory - LOADING MAIN ROUTER
+2015-04-01 16:09:21,542 [main            ] [          ] INFO  restx.RestxMainRouterFactory - 
+--------------------------------------
+ -- RESTX >> LOAD ON REQUEST << >> CLEAN << >> TEST MODE <<
+ -- for admin console,
+ --   VISIT http://127.0.0.1:61449/api/@/ui/
+ --
+
+2015-04-01 16:09:21,685 [main            ] [          ] INFO  o.e.j.s.listener.ELContextCleaner - javax.el.BeanELResolver purged
+2015-04-01 16:15:24,157 [main            ] [          ] INFO  org.eclipse.jetty.server.Server - jetty-8.1.8.v20121106
+2015-04-01 16:15:24,402 [main            ] [          ] INFO  restx.RestxMainRouterFactory - LOADING MAIN ROUTER
+2015-04-01 16:15:24,403 [main            ] [          ] INFO  restx.RestxMainRouterFactory - 
+--------------------------------------
+ -- RESTX >> LOAD ON REQUEST << >> CLEAN << >> TEST MODE <<
+ -- for admin console,
+ --   VISIT http://127.0.0.1:61534/api/@/ui/
+ --
+
+2015-04-01 16:15:26,360 [qtp1495608502-14] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 16:15:26,496 [qtp1495608502-14] [          ] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.0.1.Final
+2015-04-01 16:15:26,620 [qtp1495608502-14] [          ] INFO  restx.RestxMainRouterFactory - [RESTX REQUEST] GET /hello ? who=xavier - per request factory created in 1.907 s
+2015-04-01 16:15:26,628 [qtp1495608502-14] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /hello ? who=xavier >> NOT_FOUND - 6.716 ms
+2015-04-01 16:15:27,066 [qtp1495608502-16] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 16:15:27,104 [qtp1495608502-16] [          ] INFO  restx.RestxMainRouterFactory - [RESTX REQUEST] GET /message - per request factory created in 279.0 ms
+2015-04-01 16:15:27,106 [qtp1495608502-16] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /message >> NOT_FOUND - 851.8 μs
+2015-04-01 16:15:27,461 [qtp1495608502-14] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 16:15:27,483 [qtp1495608502-14] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /message >> NOT_FOUND - 708.9 μs
+2015-04-01 16:15:27,768 [qtp1495608502-16] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 16:15:27,791 [qtp1495608502-16] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /message >> NOT_FOUND - 746.3 μs
+2015-04-01 16:15:28,109 [qtp1495608502-16] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 16:15:28,125 [qtp1495608502-16] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] POST /mypojo >> NOT_FOUND - 615.9 μs
+2015-04-01 16:15:28,277 [main            ] [          ] INFO  o.e.j.s.listener.ELContextCleaner - javax.el.BeanELResolver purged
+2015-04-01 16:15:28,335 [main            ] [          ] INFO  org.eclipse.jetty.server.Server - jetty-8.1.8.v20121106
+2015-04-01 16:15:28,402 [main            ] [          ] INFO  restx.RestxMainRouterFactory - LOADING MAIN ROUTER
+2015-04-01 16:15:28,402 [main            ] [          ] INFO  restx.RestxMainRouterFactory - 
+--------------------------------------
+ -- RESTX >> LOAD ON REQUEST << >> CLEAN << >> TEST MODE <<
+ -- for admin console,
+ --   VISIT http://127.0.0.1:61538/api/@/ui/
+ --
+
+2015-04-01 16:15:28,438 [main            ] [          ] INFO  o.e.j.s.listener.ELContextCleaner - javax.el.BeanELResolver purged
+2015-04-01 16:18:47,372 [main            ] [          ] INFO  org.eclipse.jetty.server.Server - jetty-8.1.8.v20121106
+2015-04-01 16:18:47,926 [main            ] [          ] INFO  restx.RestxMainRouterFactory - LOADING MAIN ROUTER
+2015-04-01 16:18:47,935 [main            ] [          ] INFO  restx.RestxMainRouterFactory - 
+--------------------------------------
+ -- RESTX >> LOAD ON REQUEST << >> DEV MODE << >> AUTO COMPILE <<
+ -- for admin console,
+ --   VISIT http://127.0.0.1:8080/api/@/ui/
+ --
+
+2015-04-01 16:18:49,562 [pool-1-thread-1 ] [          ] INFO  restx.classloader.CompilationManager - compilation finished: 5 sources compiled in 1.516 s
+2015-04-01 16:18:50,201 [main            ] [          ] INFO  restx.classloader.CompilationManager - watching for changes in [src/main/java, src/main/resources]; current location is /Users/brendanshort/Projects/6point6 Internal/pothole-management-api/srv/.
+2015-04-01 16:18:50,826 [main            ] [          ] INFO  restx.monitor.MetricsConfiguration - registering Metrics JVM metrics
+2015-04-01 16:18:50,838 [main            ] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 16:18:53,874 [qtp532854629-23 ] [          ] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.0.1.Final
+2015-04-01 16:18:53,988 [qtp532854629-23 ] [          ] INFO  restx.RestxMainRouterFactory - [RESTX REQUEST] GET /@/ui - per request factory created in 359.1 ms
+2015-04-01 16:18:53,994 [qtp532854629-23 ] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /@/ui >> NOT_FOUND - 6.301 ms
+2015-04-01 16:18:58,706 [qtp532854629-24 ] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /@/ui >> NOT_FOUND - 997.9 μs
+2015-04-01 16:19:26,906 [qtp532854629-23 ] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /@/api-docs >> OK - 86.96 ms
+2015-04-01 16:19:46,736 [qtp532854629-23 ] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /@/pages >> UNAUTHORIZED - 6.670 ms
+2015-04-01 16:22:20,516 [pool-2-thread-1 ] [          ] INFO  restx.classloader.CompilationManager - compilation finished: 1 sources compiled in 201.7 ms
+2015-04-01 16:22:30,412 [pool-2-thread-1 ] [          ] INFO  restx.classloader.CompilationManager - compilation finished: 1 sources compiled in 105.9 ms
+2015-04-01 16:23:10,385 [pool-2-thread-1 ] [          ] INFO  restx.classloader.CompilationManager - compilation finished: 1 sources compiled in 79.49 ms
+2015-04-01 16:23:57,586 [Thread-1        ] [          ] INFO  o.e.j.s.listener.ELContextCleaner - javax.el.BeanELResolver purged
+2015-04-01 16:23:57,641 [Thread-1        ] [          ] INFO  o.e.jetty.util.thread.ShutdownThread - shutdown already commenced
+2015-04-01 16:24:04,832 [main            ] [          ] INFO  org.eclipse.jetty.server.Server - jetty-8.1.8.v20121106
+2015-04-01 16:24:05,062 [main            ] [          ] INFO  restx.RestxMainRouterFactory - LOADING MAIN ROUTER
+2015-04-01 16:24:05,062 [main            ] [          ] INFO  restx.RestxMainRouterFactory - 
+--------------------------------------
+ -- RESTX >> LOAD ON REQUEST << >> CLEAN << >> TEST MODE <<
+ -- for admin console,
+ --   VISIT http://127.0.0.1:61691/api/@/ui/
+ --
+
+2015-04-01 16:24:05,196 [main            ] [          ] INFO  o.e.j.s.listener.ELContextCleaner - javax.el.BeanELResolver purged
+2015-04-01 16:31:25,774 [main            ] [          ] INFO  org.eclipse.jetty.server.Server - jetty-8.1.8.v20121106
+2015-04-01 16:31:26,002 [main            ] [          ] INFO  restx.RestxMainRouterFactory - LOADING MAIN ROUTER
+2015-04-01 16:31:26,002 [main            ] [          ] INFO  restx.RestxMainRouterFactory - 
+--------------------------------------
+ -- RESTX >> LOAD ON REQUEST << >> CLEAN << >> TEST MODE <<
+ -- for admin console,
+ --   VISIT http://127.0.0.1:61911/api/@/ui/
+ --
+
+2015-04-01 16:31:26,134 [main            ] [          ] INFO  o.e.j.s.listener.ELContextCleaner - javax.el.BeanELResolver purged
+2015-04-01 16:32:48,875 [main            ] [          ] INFO  org.eclipse.jetty.server.Server - jetty-8.1.8.v20121106
+2015-04-01 16:32:49,073 [main            ] [          ] INFO  restx.RestxMainRouterFactory - LOADING MAIN ROUTER
+2015-04-01 16:32:49,073 [main            ] [          ] INFO  restx.RestxMainRouterFactory - 
+--------------------------------------
+ -- RESTX >> LOAD ON REQUEST << >> CLEAN << >> TEST MODE <<
+ -- for admin console,
+ --   VISIT http://127.0.0.1:61930/api/@/ui/
+ --
+
+2015-04-01 16:32:49,191 [main            ] [          ] INFO  o.e.j.s.listener.ELContextCleaner - javax.el.BeanELResolver purged
+2015-04-01 16:40:22,636 [main            ] [          ] WARN  org.reflections.Reflections - given scan urls are empty. set urls in the configuration
+2015-04-01 16:40:22,703 [main            ] [          ] INFO  org.eclipse.jetty.server.Server - jetty-8.1.8.v20121106
+2015-04-01 16:40:22,927 [main            ] [          ] INFO  restx.RestxMainRouterFactory - LOADING MAIN ROUTER
+2015-04-01 16:40:22,928 [main            ] [          ] INFO  restx.RestxMainRouterFactory - 
+--------------------------------------
+ -- RESTX >> LOAD ON REQUEST << >> CLEAN << >> TEST MODE <<
+ -- for admin console,
+ --   VISIT http://127.0.0.1:62029/api/@/ui/
+ --
+
+2015-04-01 16:40:23,036 [main            ] [          ] INFO  o.e.j.s.listener.ELContextCleaner - javax.el.BeanELResolver purged
+2015-04-01 16:41:29,069 [main            ] [          ] INFO  org.eclipse.jetty.server.Server - jetty-8.1.8.v20121106
+2015-04-01 16:41:29,339 [main            ] [          ] INFO  restx.RestxMainRouterFactory - LOADING MAIN ROUTER
+2015-04-01 16:41:29,340 [main            ] [          ] INFO  restx.RestxMainRouterFactory - 
+--------------------------------------
+ -- RESTX >> LOAD ON REQUEST << >> CLEAN << >> TEST MODE <<
+ -- for admin console,
+ --   VISIT http://127.0.0.1:62046/api/@/ui/
+ --
+
+2015-04-01 16:41:30,624 [qtp1003206025-14] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 16:41:30,798 [qtp1003206025-14] [          ] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.0.1.Final
+2015-04-01 16:41:30,999 [qtp1003206025-14] [          ] INFO  restx.RestxMainRouterFactory - [RESTX REQUEST] GET /hello ? who=xavier - per request factory created in 1.355 s
+2015-04-01 16:41:31,009 [qtp1003206025-14] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /hello ? who=xavier >> NOT_FOUND - 9.841 ms
+2015-04-01 16:41:31,493 [qtp1003206025-17] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 16:41:31,526 [qtp1003206025-17] [          ] INFO  restx.RestxMainRouterFactory - [RESTX REQUEST] GET /message - per request factory created in 277.6 ms
+2015-04-01 16:41:31,527 [qtp1003206025-17] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /message >> NOT_FOUND - 800.3 μs
+2015-04-01 16:41:31,812 [qtp1003206025-17] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 16:41:31,828 [qtp1003206025-17] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] POST /mypojo >> NOT_FOUND - 648.0 μs
+2015-04-01 16:41:32,108 [qtp1003206025-14] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 16:41:32,130 [qtp1003206025-14] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /message >> NOT_FOUND - 754.2 μs
+2015-04-01 16:41:32,437 [qtp1003206025-14] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 16:41:32,458 [qtp1003206025-14] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /message >> NOT_FOUND - 737.9 μs
+2015-04-01 16:41:32,601 [main            ] [          ] INFO  o.e.j.s.listener.ELContextCleaner - javax.el.BeanELResolver purged
+2015-04-01 16:43:38,503 [main            ] [          ] INFO  org.eclipse.jetty.server.Server - jetty-8.1.8.v20121106
+2015-04-01 16:43:38,725 [main            ] [          ] INFO  restx.RestxMainRouterFactory - LOADING MAIN ROUTER
+2015-04-01 16:43:38,726 [main            ] [          ] INFO  restx.RestxMainRouterFactory - 
+--------------------------------------
+ -- RESTX >> LOAD ON REQUEST << >> CLEAN << >> TEST MODE <<
+ -- for admin console,
+ --   VISIT http://127.0.0.1:62073/api/@/ui/
+ --
+
+2015-04-01 16:43:39,649 [qtp1003206025-14] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 16:43:39,786 [qtp1003206025-14] [          ] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.0.1.Final
+2015-04-01 16:43:39,907 [qtp1003206025-14] [          ] INFO  restx.RestxMainRouterFactory - [RESTX REQUEST] GET /hello ? who=xavier - per request factory created in 934.7 ms
+2015-04-01 16:43:39,914 [qtp1003206025-14] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /hello ? who=xavier >> NOT_FOUND - 6.668 ms
+2015-04-01 16:43:40,357 [qtp1003206025-18] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 16:43:40,382 [qtp1003206025-18] [          ] INFO  restx.RestxMainRouterFactory - [RESTX REQUEST] GET /message - per request factory created in 251.3 ms
+2015-04-01 16:43:40,383 [qtp1003206025-18] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /message >> NOT_FOUND - 681.9 μs
+2015-04-01 16:43:40,700 [qtp1003206025-18] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 16:43:40,722 [qtp1003206025-18] [          ] INFO  restx.RestxMainRouterFactory - [RESTX REQUEST] POST /potholes - per request factory created in 215.3 ms
+2015-04-01 16:43:40,920 [qtp1003206025-18] [user1     ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] POST /potholes >> OK - 197.7 ms
+2015-04-01 16:43:41,242 [qtp1003206025-18] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 16:43:41,273 [qtp1003206025-18] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /message >> NOT_FOUND - 3.305 ms
+2015-04-01 16:43:41,563 [qtp1003206025-14] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 16:43:41,585 [qtp1003206025-14] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /message >> NOT_FOUND - 805.8 μs
+2015-04-01 16:43:41,733 [main            ] [          ] INFO  o.e.j.s.listener.ELContextCleaner - javax.el.BeanELResolver purged
+2015-04-01 16:44:22,143 [main            ] [          ] INFO  org.eclipse.jetty.server.Server - jetty-8.1.8.v20121106
+2015-04-01 16:44:22,358 [main            ] [          ] INFO  restx.RestxMainRouterFactory - LOADING MAIN ROUTER
+2015-04-01 16:44:22,360 [main            ] [          ] INFO  restx.RestxMainRouterFactory - 
+--------------------------------------
+ -- RESTX >> LOAD ON REQUEST << >> CLEAN << >> TEST MODE <<
+ -- for admin console,
+ --   VISIT http://127.0.0.1:62086/api/@/ui/
+ --
+
+2015-04-01 16:44:23,237 [qtp1440738283-14] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 16:44:23,357 [qtp1440738283-14] [          ] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.0.1.Final
+2015-04-01 16:44:23,475 [qtp1440738283-14] [          ] INFO  restx.RestxMainRouterFactory - [RESTX REQUEST] POST /potholes - per request factory created in 860.5 ms
+2015-04-01 16:44:23,694 [qtp1440738283-14] [user1     ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] POST /potholes >> OK - 218.1 ms
+2015-04-01 16:44:23,757 [main            ] [          ] INFO  o.e.j.s.listener.ELContextCleaner - javax.el.BeanELResolver purged
+2015-04-01 16:46:31,987 [main            ] [          ] INFO  org.eclipse.jetty.server.Server - jetty-8.1.8.v20121106
+2015-04-01 16:46:32,192 [main            ] [          ] INFO  restx.RestxMainRouterFactory - LOADING MAIN ROUTER
+2015-04-01 16:46:32,192 [main            ] [          ] INFO  restx.RestxMainRouterFactory - 
+--------------------------------------
+ -- RESTX >> LOAD ON REQUEST << >> CLEAN << >> TEST MODE <<
+ -- for admin console,
+ --   VISIT http://127.0.0.1:62155/api/@/ui/
+ --
+
+2015-04-01 16:46:33,082 [qtp768216420-14 ] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 16:46:33,213 [qtp768216420-14 ] [          ] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.0.1.Final
+2015-04-01 16:46:33,348 [qtp768216420-14 ] [          ] INFO  restx.RestxMainRouterFactory - [RESTX REQUEST] POST /potholes - per request factory created in 904.7 ms
+2015-04-01 16:46:33,572 [qtp768216420-14 ] [user1     ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] POST /potholes >> OK - 223.3 ms
+2015-04-01 16:46:33,666 [main            ] [          ] INFO  o.e.j.s.listener.ELContextCleaner - javax.el.BeanELResolver purged
+2015-04-01 17:09:32,966 [main            ] [          ] INFO  org.eclipse.jetty.server.Server - jetty-8.1.8.v20121106
+2015-04-01 17:09:33,470 [main            ] [          ] INFO  restx.RestxMainRouterFactory - LOADING MAIN ROUTER
+2015-04-01 17:09:33,478 [main            ] [          ] INFO  restx.RestxMainRouterFactory - 
+--------------------------------------
+ -- RESTX >> LOAD ON REQUEST << >> DEV MODE << >> AUTO COMPILE <<
+ -- for admin console,
+ --   VISIT http://127.0.0.1:8080/api/@/ui/
+ --
+
+2015-04-01 17:09:35,106 [pool-1-thread-1 ] [          ] INFO  restx.classloader.CompilationManager - compilation finished: 5 sources compiled in 1.516 s
+2015-04-01 17:09:35,792 [main            ] [          ] INFO  restx.classloader.CompilationManager - watching for changes in [src/main/java, src/main/resources]; current location is /Users/brendanshort/Projects/6point6 Internal/potholemanagementapi/srv/.
+2015-04-01 17:09:37,534 [main            ] [          ] INFO  restx.monitor.MetricsConfiguration - registering Metrics JVM metrics
+2015-04-01 17:09:37,547 [main            ] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 17:10:51,610 [qtp532854629-24 ] [          ] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.0.1.Final
+2015-04-01 17:10:51,740 [qtp532854629-24 ] [          ] INFO  restx.RestxMainRouterFactory - [RESTX REQUEST] GET /potholes - per request factory created in 420.0 ms
+2015-04-01 17:10:51,868 [qtp532854629-24 ] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /potholes >> OK - 126.8 ms
+2015-04-01 17:11:22,722 [qtp532854629-25 ] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /potholes >> OK - 15.81 ms
+2015-04-01 17:11:36,100 [qtp532854629-25 ] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /potholes >> OK - 5.569 ms
+2015-04-01 17:16:37,532 [Thread-1        ] [          ] INFO  o.e.j.s.listener.ELContextCleaner - javax.el.BeanELResolver purged
+2015-04-01 17:16:37,590 [Thread-1        ] [          ] INFO  o.e.jetty.util.thread.ShutdownThread - shutdown already commenced
+2015-04-01 17:16:52,996 [main            ] [          ] INFO  org.eclipse.jetty.server.Server - jetty-8.1.8.v20121106
+2015-04-01 17:16:53,564 [main            ] [          ] INFO  restx.RestxMainRouterFactory - LOADING MAIN ROUTER
+2015-04-01 17:16:53,575 [main            ] [          ] INFO  restx.RestxMainRouterFactory - 
+--------------------------------------
+ -- RESTX >> LOAD ON REQUEST << >> DEV MODE << >> AUTO COMPILE <<
+ -- for admin console,
+ --   VISIT http://127.0.0.1:5050/api/@/ui/
+ --
+
+2015-04-01 17:16:55,107 [pool-1-thread-1 ] [          ] INFO  restx.classloader.CompilationManager - compilation finished: 5 sources compiled in 1.372 s
+2015-04-01 17:16:55,777 [main            ] [          ] INFO  restx.classloader.CompilationManager - watching for changes in [src/main/java, src/main/resources]; current location is /Users/brendanshort/Projects/6point6 Internal/potholemanagementapi/srv/.
+2015-04-01 17:16:56,610 [main            ] [          ] INFO  restx.monitor.MetricsConfiguration - registering Metrics JVM metrics
+2015-04-01 17:16:56,623 [main            ] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 17:17:19,088 [Thread-1        ] [          ] INFO  o.e.j.s.listener.ELContextCleaner - javax.el.BeanELResolver purged
+2015-04-01 17:17:19,143 [Thread-1        ] [          ] INFO  o.e.jetty.util.thread.ShutdownThread - shutdown already commenced
+2015-04-01 17:24:01,630 [main            ] [          ] INFO  org.eclipse.jetty.server.Server - jetty-8.1.8.v20121106
+2015-04-01 17:24:02,125 [main            ] [          ] INFO  restx.RestxMainRouterFactory - LOADING MAIN ROUTER
+2015-04-01 17:24:02,134 [main            ] [          ] INFO  restx.RestxMainRouterFactory - 
+--------------------------------------
+ -- RESTX >> LOAD ON REQUEST << >> DEV MODE << >> AUTO COMPILE <<
+ -- for admin console,
+ --   VISIT http://127.0.0.1:5050/api/@/ui/
+ --
+
+2015-04-01 17:24:03,607 [pool-1-thread-1 ] [          ] INFO  restx.classloader.CompilationManager - compilation finished: 5 sources compiled in 1.350 s
+2015-04-01 17:24:04,165 [main            ] [          ] INFO  restx.classloader.CompilationManager - watching for changes in [src/main/java, src/main/resources]; current location is /Users/brendanshort/Projects/6point6 Internal/potholemanagementapi/srv/.
+2015-04-01 17:24:05,123 [main            ] [          ] INFO  restx.monitor.MetricsConfiguration - registering Metrics JVM metrics
+2015-04-01 17:24:05,134 [main            ] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 17:24:05,783 [qtp1486566962-22] [          ] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.0.1.Final
+2015-04-01 17:24:06,046 [qtp1486566962-22] [          ] INFO  restx.RestxMainRouterFactory - [RESTX REQUEST] GET /potholes - per request factory created in 468.5 ms
+2015-04-01 17:24:06,168 [qtp1486566962-22] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /potholes >> OK - 121.0 ms
+2015-04-01 17:24:06,345 [Thread-1        ] [          ] INFO  o.e.j.s.listener.ELContextCleaner - javax.el.BeanELResolver purged
+2015-04-01 17:24:06,399 [Thread-1        ] [          ] INFO  o.e.jetty.util.thread.ShutdownThread - shutdown already commenced
+2015-04-01 17:24:57,469 [main            ] [          ] INFO  org.eclipse.jetty.server.Server - jetty-8.1.8.v20121106
+2015-04-01 17:24:57,974 [main            ] [          ] INFO  restx.RestxMainRouterFactory - LOADING MAIN ROUTER
+2015-04-01 17:24:57,982 [main            ] [          ] INFO  restx.RestxMainRouterFactory - 
+--------------------------------------
+ -- RESTX >> LOAD ON REQUEST << >> DEV MODE << >> AUTO COMPILE <<
+ -- for admin console,
+ --   VISIT http://127.0.0.1:5050/api/@/ui/
+ --
+
+2015-04-01 17:24:59,445 [pool-1-thread-1 ] [          ] INFO  restx.classloader.CompilationManager - compilation finished: 5 sources compiled in 1.345 s
+2015-04-01 17:25:00,015 [main            ] [          ] INFO  restx.classloader.CompilationManager - watching for changes in [src/main/java, src/main/resources]; current location is /Users/brendanshort/Projects/6point6 Internal/potholemanagementapi/srv/.
+2015-04-01 17:25:00,507 [main            ] [          ] INFO  restx.monitor.MetricsConfiguration - registering Metrics JVM metrics
+2015-04-01 17:25:00,516 [main            ] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 17:25:01,213 [qtp1486566962-22] [          ] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.0.1.Final
+2015-04-01 17:25:01,334 [qtp1486566962-22] [          ] INFO  restx.RestxMainRouterFactory - [RESTX REQUEST] GET /potholes - per request factory created in 344.7 ms
+2015-04-01 17:25:01,589 [qtp1486566962-22] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /potholes >> OK - 253.6 ms
+2015-04-01 17:25:01,965 [Thread-1        ] [          ] INFO  o.e.j.s.listener.ELContextCleaner - javax.el.BeanELResolver purged
+2015-04-01 17:25:02,021 [Thread-1        ] [          ] INFO  o.e.jetty.util.thread.ShutdownThread - shutdown already commenced
+2015-04-01 17:37:28,955 [main            ] [          ] INFO  org.eclipse.jetty.server.Server - jetty-8.1.8.v20121106
+2015-04-01 17:37:29,988 [main            ] [          ] INFO  restx.RestxMainRouterFactory - LOADING MAIN ROUTER
+2015-04-01 17:37:30,005 [main            ] [          ] INFO  restx.RestxMainRouterFactory - 
+--------------------------------------
+ -- RESTX >> LOAD ON REQUEST << >> DEV MODE << >> AUTO COMPILE <<
+ -- for admin console,
+ --   VISIT http://127.0.0.1:5050/api/@/ui/
+ --
+
+2015-04-01 17:37:32,887 [pool-1-thread-1 ] [          ] INFO  restx.classloader.CompilationManager - compilation finished: 5 sources compiled in 2.640 s
+2015-04-01 17:37:34,138 [main            ] [          ] INFO  restx.classloader.CompilationManager - watching for changes in [src/main/java, src/main/resources]; current location is /Users/brendanshort/Projects/6point6 Internal/potholemanagementapi/srv/.
+2015-04-01 17:37:35,204 [main            ] [          ] INFO  restx.monitor.MetricsConfiguration - registering Metrics JVM metrics
+2015-04-01 17:37:35,221 [main            ] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 17:37:36,485 [qtp1282287470-23] [          ] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.0.1.Final
+2015-04-01 17:37:36,917 [qtp1282287470-23] [          ] INFO  restx.RestxMainRouterFactory - [RESTX REQUEST] POST /potholes ? location=testlocation - per request factory created in 788.8 ms
+2015-04-01 17:37:36,933 [qtp1282287470-23] [          ] WARN  restx.StdRestxMainRouter - request raised JsonMappingException
+com.fasterxml.jackson.databind.JsonMappingException: No content to map due to end-of-input
+ at [Source: restx.servlet.HttpServletRestxRequest$1@155db405; line: 1, column: 1]
+	at com.fasterxml.jackson.databind.JsonMappingException.from(JsonMappingException.java:164) ~[jackson-databind-2.3.3.jar:2.3.3]
+	at com.fasterxml.jackson.databind.ObjectReader._initForReading(ObjectReader.java:1352) ~[jackson-databind-2.3.3.jar:2.3.3]
+	at com.fasterxml.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:1253) ~[jackson-databind-2.3.3.jar:2.3.3]
+	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:865) ~[jackson-databind-2.3.3.jar:2.3.3]
+	at restx.jackson.JsonEntityRequestBodyReader.readBody(JsonEntityRequestBodyReader.java:35) ~[restx-core-0.34.jar:na]
+	at restx.entity.StdEntityRoute.handle(StdEntityRoute.java:136) ~[restx-core-0.34.jar:na]
+	at restx.RestxHandlerMatch.handle(RestxHandlerMatch.java:56) ~[restx-core-0.34.jar:na]
+	at restx.ResponseCloserFilter.handle(ResponseCloserFilter.java:28) ~[restx-core-0.34.jar:na]
+	at restx.RestxHandlerMatch.handle(RestxHandlerMatch.java:56) ~[restx-core-0.34.jar:na]
+	at restx.CacheFilter$1.handle(CacheFilter.java:51) ~[restx-core-0.34.jar:na]
+	at restx.RestxHandlerMatch.handle(RestxHandlerMatch.java:56) ~[restx-core-0.34.jar:na]
+	at restx.security.RestxSessionLogFilter.handle(RestxSessionLogFilter.java:43) ~[restx-core-0.34.jar:na]
+	at restx.RestxHandlerMatch.handle(RestxHandlerMatch.java:56) ~[restx-core-0.34.jar:na]
+	at restx.security.RestxSessionCookieFilter.handle(RestxSessionCookieFilter.java:96) ~[restx-core-0.34.jar:na]
+	at restx.RestxHandlerMatch.handle(RestxHandlerMatch.java:56) ~[restx-core-0.34.jar:na]
+	at restx.stats.RestxStatsCollectionFilter.handle(RestxStatsCollectionFilter.java:39) ~[restx-stats-admin-0.34.jar:na]
+	at restx.RestxHandlerMatch.handle(RestxHandlerMatch.java:56) ~[restx-core-0.34.jar:na]
+	at restx.StdRestxMainRouter.route(StdRestxMainRouter.java:152) ~[restx-core-0.34.jar:na]
+	at restx.RestxMainRouterFactory$PerRequestFactoryLoader.route(RestxMainRouterFactory.java:228) [restx-core-0.34.jar:na]
+	at restx.RestxMainRouterFactory$RecordingMainRouter.route(RestxMainRouterFactory.java:185) [restx-core-0.34.jar:na]
+	at restx.RestxMainRouterFactory$CompilationManagerRouter.route(RestxMainRouterFactory.java:337) [restx-core-0.34.jar:na]
+	at restx.servlet.AbstractRestxMainRouterServlet.service(AbstractRestxMainRouterServlet.java:48) [restx-servlet-0.34.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:770) [javax.servlet-api-3.0.1.jar:3.0.1]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:669) [jetty-servlet-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455) [jetty-servlet-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:536) [jetty-security-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382) [jetty-servlet-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.handler.HandlerList.handle(HandlerList.java:52) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.Server.handle(Server.java:365) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856) [jetty-http-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240) [jetty-http-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628) [jetty-io-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52) [jetty-io-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608) [jetty-util-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543) [jetty-util-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_40]
+2015-04-01 17:37:36,945 [qtp1282287470-23] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] POST /potholes ? location=testlocation >> BAD_REQUEST - 27.56 ms
+2015-04-01 17:37:37,252 [qtp1282287470-23] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /potholes >> OK - 163.1 ms
+2015-04-01 17:37:37,436 [Thread-1        ] [          ] INFO  o.e.j.s.listener.ELContextCleaner - javax.el.BeanELResolver purged
+2015-04-01 17:37:37,492 [Thread-1        ] [          ] INFO  o.e.jetty.util.thread.ShutdownThread - shutdown already commenced
+2015-04-01 17:44:05,435 [main            ] [          ] INFO  org.eclipse.jetty.server.Server - jetty-8.1.8.v20121106
+2015-04-01 17:44:06,067 [main            ] [          ] INFO  restx.RestxMainRouterFactory - LOADING MAIN ROUTER
+2015-04-01 17:44:06,078 [main            ] [          ] INFO  restx.RestxMainRouterFactory - 
+--------------------------------------
+ -- RESTX >> LOAD ON REQUEST << >> DEV MODE << >> AUTO COMPILE <<
+ -- for admin console,
+ --   VISIT http://127.0.0.1:5050/api/@/ui/
+ --
+
+2015-04-01 17:44:07,659 [pool-1-thread-1 ] [          ] INFO  restx.classloader.CompilationManager - compilation finished: 5 sources compiled in 1.400 s
+2015-04-01 17:44:08,355 [main            ] [          ] INFO  restx.classloader.CompilationManager - watching for changes in [src/main/java, src/main/resources]; current location is /Users/brendanshort/Projects/6point6 Internal/potholemanagementapi/srv/.
+2015-04-01 17:44:08,996 [main            ] [          ] INFO  restx.monitor.MetricsConfiguration - registering Metrics JVM metrics
+2015-04-01 17:44:09,008 [main            ] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 17:44:09,826 [qtp1282287470-23] [          ] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.0.1.Final
+2015-04-01 17:44:10,099 [qtp1282287470-23] [          ] INFO  restx.RestxMainRouterFactory - [RESTX REQUEST] POST /potholes ? details={"location":"testlocation"} - per request factory created in 499.9 ms
+2015-04-01 17:44:10,114 [qtp1282287470-23] [          ] WARN  restx.StdRestxMainRouter - request raised JsonMappingException
+com.fasterxml.jackson.databind.JsonMappingException: No content to map due to end-of-input
+ at [Source: restx.servlet.HttpServletRestxRequest$1@7984a0bd; line: 1, column: 1]
+	at com.fasterxml.jackson.databind.JsonMappingException.from(JsonMappingException.java:164) ~[jackson-databind-2.3.3.jar:2.3.3]
+	at com.fasterxml.jackson.databind.ObjectReader._initForReading(ObjectReader.java:1352) ~[jackson-databind-2.3.3.jar:2.3.3]
+	at com.fasterxml.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:1253) ~[jackson-databind-2.3.3.jar:2.3.3]
+	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:865) ~[jackson-databind-2.3.3.jar:2.3.3]
+	at restx.jackson.JsonEntityRequestBodyReader.readBody(JsonEntityRequestBodyReader.java:35) ~[restx-core-0.34.jar:na]
+	at restx.entity.StdEntityRoute.handle(StdEntityRoute.java:136) ~[restx-core-0.34.jar:na]
+	at restx.RestxHandlerMatch.handle(RestxHandlerMatch.java:56) ~[restx-core-0.34.jar:na]
+	at restx.ResponseCloserFilter.handle(ResponseCloserFilter.java:28) ~[restx-core-0.34.jar:na]
+	at restx.RestxHandlerMatch.handle(RestxHandlerMatch.java:56) ~[restx-core-0.34.jar:na]
+	at restx.CacheFilter$1.handle(CacheFilter.java:51) ~[restx-core-0.34.jar:na]
+	at restx.RestxHandlerMatch.handle(RestxHandlerMatch.java:56) ~[restx-core-0.34.jar:na]
+	at restx.security.RestxSessionLogFilter.handle(RestxSessionLogFilter.java:43) ~[restx-core-0.34.jar:na]
+	at restx.RestxHandlerMatch.handle(RestxHandlerMatch.java:56) ~[restx-core-0.34.jar:na]
+	at restx.security.RestxSessionCookieFilter.handle(RestxSessionCookieFilter.java:96) ~[restx-core-0.34.jar:na]
+	at restx.RestxHandlerMatch.handle(RestxHandlerMatch.java:56) ~[restx-core-0.34.jar:na]
+	at restx.stats.RestxStatsCollectionFilter.handle(RestxStatsCollectionFilter.java:39) ~[restx-stats-admin-0.34.jar:na]
+	at restx.RestxHandlerMatch.handle(RestxHandlerMatch.java:56) ~[restx-core-0.34.jar:na]
+	at restx.StdRestxMainRouter.route(StdRestxMainRouter.java:152) ~[restx-core-0.34.jar:na]
+	at restx.RestxMainRouterFactory$PerRequestFactoryLoader.route(RestxMainRouterFactory.java:228) [restx-core-0.34.jar:na]
+	at restx.RestxMainRouterFactory$RecordingMainRouter.route(RestxMainRouterFactory.java:185) [restx-core-0.34.jar:na]
+	at restx.RestxMainRouterFactory$CompilationManagerRouter.route(RestxMainRouterFactory.java:337) [restx-core-0.34.jar:na]
+	at restx.servlet.AbstractRestxMainRouterServlet.service(AbstractRestxMainRouterServlet.java:48) [restx-servlet-0.34.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:770) [javax.servlet-api-3.0.1.jar:3.0.1]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:669) [jetty-servlet-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455) [jetty-servlet-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:536) [jetty-security-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382) [jetty-servlet-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.handler.HandlerList.handle(HandlerList.java:52) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.Server.handle(Server.java:365) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856) [jetty-http-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240) [jetty-http-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628) [jetty-io-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52) [jetty-io-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608) [jetty-util-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543) [jetty-util-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_40]
+2015-04-01 17:44:10,127 [qtp1282287470-23] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] POST /potholes ? details={"location":"testlocation"} >> BAD_REQUEST - 26.78 ms
+2015-04-01 17:44:10,345 [qtp1282287470-23] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /potholes >> OK - 103.6 ms
+2015-04-01 17:44:10,516 [Thread-1        ] [          ] INFO  o.e.j.s.listener.ELContextCleaner - javax.el.BeanELResolver purged
+2015-04-01 17:44:10,573 [Thread-1        ] [          ] INFO  o.e.jetty.util.thread.ShutdownThread - shutdown already commenced
+2015-04-01 17:45:10,040 [main            ] [          ] INFO  org.eclipse.jetty.server.Server - jetty-8.1.8.v20121106
+2015-04-01 17:45:10,717 [main            ] [          ] INFO  restx.RestxMainRouterFactory - LOADING MAIN ROUTER
+2015-04-01 17:45:10,727 [main            ] [          ] INFO  restx.RestxMainRouterFactory - 
+--------------------------------------
+ -- RESTX >> LOAD ON REQUEST << >> DEV MODE << >> AUTO COMPILE <<
+ -- for admin console,
+ --   VISIT http://127.0.0.1:5050/api/@/ui/
+ --
+
+2015-04-01 17:45:12,359 [pool-1-thread-1 ] [          ] INFO  restx.classloader.CompilationManager - compilation finished: 5 sources compiled in 1.490 s
+2015-04-01 17:45:12,888 [main            ] [          ] INFO  restx.classloader.CompilationManager - watching for changes in [src/main/java, src/main/resources]; current location is /Users/brendanshort/Projects/6point6 Internal/potholemanagementapi/srv/.
+2015-04-01 17:45:13,364 [main            ] [          ] INFO  restx.monitor.MetricsConfiguration - registering Metrics JVM metrics
+2015-04-01 17:45:13,386 [main            ] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 17:45:14,120 [qtp1282287470-22] [          ] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.0.1.Final
+2015-04-01 17:45:14,374 [qtp1282287470-22] [          ] INFO  restx.RestxMainRouterFactory - [RESTX REQUEST] POST /potholes - per request factory created in 495.9 ms
+2015-04-01 17:45:14,389 [qtp1282287470-22] [          ] WARN  restx.StdRestxMainRouter - request raised JsonParseException
+com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'details': was expecting ('true', 'false' or 'null')
+ at [Source: restx.servlet.HttpServletRestxRequest$1@79034b4a; line: 1, column: 9]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1524) ~[jackson-core-2.3.3.jar:2.3.3]
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:557) ~[jackson-core-2.3.3.jar:2.3.3]
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._reportInvalidToken(UTF8StreamJsonParser.java:3094) ~[jackson-core-2.3.3.jar:2.3.3]
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._handleUnexpectedValue(UTF8StreamJsonParser.java:2339) ~[jackson-core-2.3.3.jar:2.3.3]
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._nextTokenNotInObject(UTF8StreamJsonParser.java:817) ~[jackson-core-2.3.3.jar:2.3.3]
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:697) ~[jackson-core-2.3.3.jar:2.3.3]
+	at com.fasterxml.jackson.databind.ObjectReader._initForReading(ObjectReader.java:1347) ~[jackson-databind-2.3.3.jar:2.3.3]
+	at com.fasterxml.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:1253) ~[jackson-databind-2.3.3.jar:2.3.3]
+	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:865) ~[jackson-databind-2.3.3.jar:2.3.3]
+	at restx.jackson.JsonEntityRequestBodyReader.readBody(JsonEntityRequestBodyReader.java:35) ~[restx-core-0.34.jar:na]
+	at restx.entity.StdEntityRoute.handle(StdEntityRoute.java:136) ~[restx-core-0.34.jar:na]
+	at restx.RestxHandlerMatch.handle(RestxHandlerMatch.java:56) ~[restx-core-0.34.jar:na]
+	at restx.ResponseCloserFilter.handle(ResponseCloserFilter.java:28) ~[restx-core-0.34.jar:na]
+	at restx.RestxHandlerMatch.handle(RestxHandlerMatch.java:56) ~[restx-core-0.34.jar:na]
+	at restx.CacheFilter$1.handle(CacheFilter.java:51) ~[restx-core-0.34.jar:na]
+	at restx.RestxHandlerMatch.handle(RestxHandlerMatch.java:56) ~[restx-core-0.34.jar:na]
+	at restx.security.RestxSessionLogFilter.handle(RestxSessionLogFilter.java:43) ~[restx-core-0.34.jar:na]
+	at restx.RestxHandlerMatch.handle(RestxHandlerMatch.java:56) ~[restx-core-0.34.jar:na]
+	at restx.security.RestxSessionCookieFilter.handle(RestxSessionCookieFilter.java:96) ~[restx-core-0.34.jar:na]
+	at restx.RestxHandlerMatch.handle(RestxHandlerMatch.java:56) ~[restx-core-0.34.jar:na]
+	at restx.stats.RestxStatsCollectionFilter.handle(RestxStatsCollectionFilter.java:39) ~[restx-stats-admin-0.34.jar:na]
+	at restx.RestxHandlerMatch.handle(RestxHandlerMatch.java:56) ~[restx-core-0.34.jar:na]
+	at restx.StdRestxMainRouter.route(StdRestxMainRouter.java:152) ~[restx-core-0.34.jar:na]
+	at restx.RestxMainRouterFactory$PerRequestFactoryLoader.route(RestxMainRouterFactory.java:228) [restx-core-0.34.jar:na]
+	at restx.RestxMainRouterFactory$RecordingMainRouter.route(RestxMainRouterFactory.java:185) [restx-core-0.34.jar:na]
+	at restx.RestxMainRouterFactory$CompilationManagerRouter.route(RestxMainRouterFactory.java:337) [restx-core-0.34.jar:na]
+	at restx.servlet.AbstractRestxMainRouterServlet.service(AbstractRestxMainRouterServlet.java:48) [restx-servlet-0.34.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:770) [javax.servlet-api-3.0.1.jar:3.0.1]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:669) [jetty-servlet-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455) [jetty-servlet-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:536) [jetty-security-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382) [jetty-servlet-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.handler.HandlerList.handle(HandlerList.java:52) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.Server.handle(Server.java:365) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856) [jetty-http-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240) [jetty-http-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82) [jetty-server-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628) [jetty-io-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52) [jetty-io-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608) [jetty-util-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543) [jetty-util-8.1.8.v20121106.jar:8.1.8.v20121106]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_40]
+2015-04-01 17:45:14,401 [qtp1282287470-22] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] POST /potholes >> BAD_REQUEST - 26.61 ms
+2015-04-01 17:45:14,634 [qtp1282287470-22] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /potholes >> OK - 95.76 ms
+2015-04-01 17:45:14,798 [Thread-1        ] [          ] INFO  o.e.j.s.listener.ELContextCleaner - javax.el.BeanELResolver purged
+2015-04-01 17:45:14,854 [Thread-1        ] [          ] INFO  o.e.jetty.util.thread.ShutdownThread - shutdown already commenced
+2015-04-01 17:45:58,495 [main            ] [          ] INFO  org.eclipse.jetty.server.Server - jetty-8.1.8.v20121106
+2015-04-01 17:45:59,009 [main            ] [          ] INFO  restx.RestxMainRouterFactory - LOADING MAIN ROUTER
+2015-04-01 17:45:59,015 [main            ] [          ] INFO  restx.RestxMainRouterFactory - 
+--------------------------------------
+ -- RESTX >> LOAD ON REQUEST << >> DEV MODE << >> AUTO COMPILE <<
+ -- for admin console,
+ --   VISIT http://127.0.0.1:5050/api/@/ui/
+ --
+
+2015-04-01 17:46:00,556 [pool-1-thread-1 ] [          ] INFO  restx.classloader.CompilationManager - compilation finished: 5 sources compiled in 1.415 s
+2015-04-01 17:46:01,110 [main            ] [          ] INFO  restx.classloader.CompilationManager - watching for changes in [src/main/java, src/main/resources]; current location is /Users/brendanshort/Projects/6point6 Internal/potholemanagementapi/srv/.
+2015-04-01 17:46:01,666 [main            ] [          ] INFO  restx.monitor.MetricsConfiguration - registering Metrics JVM metrics
+2015-04-01 17:46:01,675 [main            ] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 17:46:02,353 [qtp1282287470-22] [          ] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.0.1.Final
+2015-04-01 17:46:02,634 [qtp1282287470-22] [          ] INFO  restx.RestxMainRouterFactory - [RESTX REQUEST] POST /potholes - per request factory created in 505.2 ms
+2015-04-01 17:46:02,796 [qtp1282287470-22] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] POST /potholes >> OK - 160.4 ms
+2015-04-01 17:46:02,955 [qtp1282287470-24] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /potholes >> OK - 37.77 ms
+2015-04-01 17:46:03,106 [Thread-1        ] [          ] INFO  o.e.j.s.listener.ELContextCleaner - javax.el.BeanELResolver purged
+2015-04-01 17:46:03,160 [Thread-1        ] [          ] INFO  o.e.jetty.util.thread.ShutdownThread - shutdown already commenced
+2015-04-01 17:48:10,288 [main            ] [          ] INFO  org.eclipse.jetty.server.Server - jetty-8.1.8.v20121106
+2015-04-01 17:48:10,785 [main            ] [          ] INFO  restx.RestxMainRouterFactory - LOADING MAIN ROUTER
+2015-04-01 17:48:10,791 [main            ] [          ] INFO  restx.RestxMainRouterFactory - 
+--------------------------------------
+ -- RESTX >> LOAD ON REQUEST << >> DEV MODE << >> AUTO COMPILE <<
+ -- for admin console,
+ --   VISIT http://127.0.0.1:5050/api/@/ui/
+ --
+
+2015-04-01 17:48:12,299 [pool-1-thread-1 ] [          ] INFO  restx.classloader.CompilationManager - compilation finished: 5 sources compiled in 1.382 s
+2015-04-01 17:48:12,854 [main            ] [          ] INFO  restx.classloader.CompilationManager - watching for changes in [src/main/java, src/main/resources]; current location is /Users/brendanshort/Projects/6point6 Internal/potholemanagementapi/srv/.
+2015-04-01 17:48:13,459 [main            ] [          ] INFO  restx.monitor.MetricsConfiguration - registering Metrics JVM metrics
+2015-04-01 17:48:13,476 [main            ] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 17:48:14,180 [qtp1282287470-22] [          ] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.0.1.Final
+2015-04-01 17:48:14,426 [qtp1282287470-22] [          ] INFO  restx.RestxMainRouterFactory - [RESTX REQUEST] POST /potholes - per request factory created in 447.4 ms
+2015-04-01 17:48:14,592 [qtp1282287470-22] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] POST /potholes >> OK - 164.6 ms
+2015-04-01 17:48:14,736 [qtp1282287470-22] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /potholes >> OK - 33.28 ms
+2015-04-01 17:48:14,909 [Thread-1        ] [          ] INFO  o.e.j.s.listener.ELContextCleaner - javax.el.BeanELResolver purged
+2015-04-01 17:48:14,963 [Thread-1        ] [          ] INFO  o.e.jetty.util.thread.ShutdownThread - shutdown already commenced
+2015-04-01 17:51:12,474 [main            ] [          ] INFO  org.eclipse.jetty.server.Server - jetty-8.1.8.v20121106
+2015-04-01 17:51:13,016 [main            ] [          ] INFO  restx.RestxMainRouterFactory - LOADING MAIN ROUTER
+2015-04-01 17:51:13,025 [main            ] [          ] INFO  restx.RestxMainRouterFactory - 
+--------------------------------------
+ -- RESTX >> LOAD ON REQUEST << >> DEV MODE << >> AUTO COMPILE <<
+ -- for admin console,
+ --   VISIT http://127.0.0.1:5050/api/@/ui/
+ --
+
+2015-04-01 17:51:14,592 [pool-1-thread-1 ] [          ] INFO  restx.classloader.CompilationManager - compilation finished: 5 sources compiled in 1.440 s
+2015-04-01 17:51:15,288 [main            ] [          ] INFO  restx.classloader.CompilationManager - watching for changes in [src/main/java, src/main/resources]; current location is /Users/brendanshort/Projects/6point6 Internal/potholemanagementapi/srv/.
+2015-04-01 17:51:15,902 [main            ] [          ] INFO  restx.monitor.MetricsConfiguration - registering Metrics JVM metrics
+2015-04-01 17:51:15,914 [main            ] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 17:51:16,679 [qtp1282287470-23] [          ] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.0.1.Final
+2015-04-01 17:51:16,821 [qtp1282287470-23] [          ] INFO  restx.RestxMainRouterFactory - [RESTX REQUEST] POST /potholes - per request factory created in 381.6 ms
+2015-04-01 17:51:17,141 [qtp1282287470-23] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] POST /potholes >> OK - 319.5 ms
+2015-04-01 17:51:17,302 [qtp1282287470-24] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /potholes >> OK - 39.54 ms
+2015-04-01 17:51:17,457 [Thread-1        ] [          ] INFO  o.e.j.s.listener.ELContextCleaner - javax.el.BeanELResolver purged
+2015-04-01 17:51:17,510 [Thread-1        ] [          ] INFO  o.e.jetty.util.thread.ShutdownThread - shutdown already commenced
+2015-04-01 17:52:24,120 [main            ] [          ] INFO  org.eclipse.jetty.server.Server - jetty-8.1.8.v20121106
+2015-04-01 17:52:24,667 [main            ] [          ] INFO  restx.RestxMainRouterFactory - LOADING MAIN ROUTER
+2015-04-01 17:52:24,673 [main            ] [          ] INFO  restx.RestxMainRouterFactory - 
+--------------------------------------
+ -- RESTX >> LOAD ON REQUEST << >> DEV MODE << >> AUTO COMPILE <<
+ -- for admin console,
+ --   VISIT http://127.0.0.1:5050/api/@/ui/
+ --
+
+2015-04-01 17:52:26,209 [pool-1-thread-1 ] [          ] INFO  restx.classloader.CompilationManager - compilation finished: 5 sources compiled in 1.417 s
+2015-04-01 17:52:26,772 [main            ] [          ] INFO  restx.classloader.CompilationManager - watching for changes in [src/main/java, src/main/resources]; current location is /Users/brendanshort/Projects/6point6 Internal/potholemanagementapi/srv/.
+2015-04-01 17:52:27,232 [main            ] [          ] INFO  restx.monitor.MetricsConfiguration - registering Metrics JVM metrics
+2015-04-01 17:52:27,243 [main            ] [          ] INFO  restx.stats.RestxStatsCollector - collecting and sharing stats enabled - see http://restx.io/stats.html for details.
+2015-04-01 17:52:27,910 [qtp1282287470-22] [          ] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.0.1.Final
+2015-04-01 17:52:28,160 [qtp1282287470-22] [          ] INFO  restx.RestxMainRouterFactory - [RESTX REQUEST] POST /potholes - per request factory created in 443.5 ms
+2015-04-01 17:52:28,298 [qtp1282287470-22] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] POST /potholes >> OK - 137.4 ms
+2015-04-01 17:52:28,427 [qtp1282287470-24] [          ] INFO  restx.StdRestxMainRouter - << [RESTX REQUEST] GET /potholes >> OK - 34.75 ms
+2015-04-01 17:52:28,621 [Thread-1        ] [          ] INFO  o.e.j.s.listener.ELContextCleaner - javax.el.BeanELResolver purged
+2015-04-01 17:52:28,676 [Thread-1        ] [          ] INFO  o.e.jetty.util.thread.ShutdownThread - shutdown already commenced

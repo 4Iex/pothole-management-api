@@ -11,8 +11,6 @@ import restx.security.PermitAll;
 
 import javax.inject.Named;
 
-import java.util.List;
-
 import static restx.common.MorePreconditions.checkEquals;
 
 @Component @RestxResource
@@ -30,7 +28,6 @@ public class PotholeResource {
             return potholes.get().find("{location: #}", location.get()).as(Pothole.class);
         } else {
             Iterable<Pothole> results = potholes.get().find().as(Pothole.class);
-            System.out.println("Results: " + results);
             return results;
         }
     }
@@ -38,7 +35,6 @@ public class PotholeResource {
     @POST("/potholes")
     @PermitAll
     public Pothole createPothole(Pothole pothole){
-//      Pothole pothole = new Pothole(location);
         potholes.get().save(pothole);
         return pothole;
     }

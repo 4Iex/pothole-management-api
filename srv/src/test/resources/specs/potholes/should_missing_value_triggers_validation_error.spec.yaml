@@ -1,10 +1,15 @@
-title: should user1 say hello
+title: should be able to add a new pothole
 given:
   - time: 2013-08-28T01:18:00.822+02:00
   - uuids: [ "e2b4430f-9541-4602-9a3a-413d17c56a6b" ]
 wts:
   - when: |
-      GET message
+      POST potholes
       $RestxSession: {"_expires":"2013-09-27T01:18:00.822+02:00","principal":"user1","sessionKey":"e2b4430f-9541-4602-9a3a-413d17c56a6b"}
+      {"location":"testlocation"}
     then: |
-      {"message":"hello user1, it's 01:18:00"}
+      {
+        "location" : "testlocation",
+        "dateReported" : "Wed Apr 01 16:46:33 BST 2015",
+        "_id" : "551c12d977c8221b29e83667"
+      }
