@@ -61,16 +61,29 @@ public class PotholeResourceSpecTest {
 
         try {
             assert (response.getStatusLine().getStatusCode() == 200);
-
             HttpEntity entity = response.getEntity();
             String responseString = EntityUtils.toString(entity, "UTF-8");
-            System.out.println("---------------- Response ------------------");
-            System.out.println(responseString);
             assert (responseString.contains("\"location\" : \"testlocation\","));
         } finally {
             response.close();
         }
     }
+
+    @Test
+    public void can_search_for_test_location_and_get_results() throws Exception {
+        HttpGet httpGet = new HttpGet(API_BASE_URL + "/potholes?location=testlocation");
+        CloseableHttpResponse response = client.execute(httpGet);
+
+        try {
+            assert (response.getStatusLine().getStatusCode() == 200);
+            HttpEntity entity = response.getEntity();
+            String responseString = EntityUtils.toString(entity, "UTF-8");
+            assert (responseString.contains("\"location\" : \"testlocation\","));
+        } finally {
+            response.close();
+        }
+    }
+
 
     public static void startServer() throws Exception {
         int port = Integer.valueOf(Optional.fromNullable(System.getenv("PORT")).or(TEST_PORT));
