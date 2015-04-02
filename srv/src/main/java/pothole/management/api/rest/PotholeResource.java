@@ -36,7 +36,7 @@ public class PotholeResource {
     @PermitAll
     @POST("/potholes")
     public Pothole createPothole(Pothole pothole){
-        pothole.setLocation(PotholeUtil.parseGeoCode(pothole.getLocation()));
+//        pothole.setLocation(PotholeUtil.parseGeoCode(pothole.getLocation()));
         potholes.get().save(pothole);
         return pothole;
     }

@@ -2,8 +2,6 @@ package pothole.management.api.util;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.json.JSONObject;
-
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
@@ -32,14 +30,21 @@ public class PotholeUtil {
     }
 
     public static Map<String, String> getLatAndLongFromJsonObject(JSONObject data){
-        JSONObject results = data.getJSONArray("results").getJSONObject(0);
-        JSONObject geometry = results.getJSONObject("geometry");
-        JSONObject loc = geometry.getJSONObject("location");
+        System.out.println("---- Inside lat long method ----");
+        System.out.println(data);
 
         HashMap<String, String> ret = new HashMap<>();
 
-        ret.put("lat", loc.get("lat").toString());
-        ret.put("lng", loc.get("lng").toString());
+        if(data.getJSONArray("results").length() > 0){
+            JSONObject results = data.getJSONArray("results").getJSONObject(0);
+            JSONObject geometry = results.getJSONObject("geometry");
+            JSONObject loc = geometry.getJSONObject("location");
+            ret.put("lat", loc.get("lat").toString());
+            ret.put("lng", loc.get("lng").toString());
+        } else {
+            ret.put("lat", "");
+            ret.put("lng", "");
+        }
 
         return ret;
     }

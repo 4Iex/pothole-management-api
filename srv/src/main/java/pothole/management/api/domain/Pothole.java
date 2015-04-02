@@ -2,11 +2,13 @@ package pothole.management.api.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import org.jongo.marshall.jackson.oid.Id;
 import org.jongo.marshall.jackson.oid.ObjectId;
+import pothole.management.api.util.PotholeUtil;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -67,6 +69,16 @@ public class Pothole {
     public Pothole setFixed(final Boolean fixed){
         this.fixed = fixed;
         return this;
+    }
+
+    @JsonProperty("formattedAddress")
+    private String getFormattedAddress() {
+        return PotholeUtil.parseGeoCode(this.location);
+    }
+
+    @JsonIgnore  @JsonProperty("formattedAddress")
+    private String setFormattedAddress(final String str) {
+        return "";
     }
 
     @Override

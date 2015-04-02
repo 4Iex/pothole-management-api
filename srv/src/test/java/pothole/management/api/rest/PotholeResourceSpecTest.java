@@ -14,6 +14,7 @@ import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 import org.junit.Before;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 import pothole.management.api.domain.Pothole;
 import restx.server.JettyWebServer;
@@ -55,7 +56,7 @@ public class PotholeResourceSpecTest {
     @Test
     public void can_add_a_new_pothole() throws Exception {
         HttpPost httpPost = new HttpPost(API_BASE_URL + "/potholes");
-        StringEntity json = new StringEntity("{\"location\":\"testlocation\"}");
+        StringEntity json = new StringEntity("{\"location\":\"mayfair\"}");
         httpPost.addHeader("content-type", "application/json");
         httpPost.setEntity(json);
         CloseableHttpResponse response = client.execute(httpPost);
@@ -65,7 +66,7 @@ public class PotholeResourceSpecTest {
             String responseString = EntityUtils.toString(entity, "UTF-8");
 
             assert (response.getStatusLine().getStatusCode() == 200);
-            assert (responseString.contains("\"location\" : \"testlocation\","));
+            assert (responseString.contains("\"location\" : \"mayfair\","));
         } finally {
             response.close();
         }
@@ -73,7 +74,7 @@ public class PotholeResourceSpecTest {
 
     @Test
     public void can_search_for_test_location_and_get_results() throws Exception {
-        HttpGet httpGet = new HttpGet(API_BASE_URL + "/potholes?location=testlocation");
+        HttpGet httpGet = new HttpGet(API_BASE_URL + "/potholes?location=mayfair");
         CloseableHttpResponse response = client.execute(httpGet);
 
         try {
@@ -81,7 +82,7 @@ public class PotholeResourceSpecTest {
             String responseString = EntityUtils.toString(entity, "UTF-8");
 
             assert (response.getStatusLine().getStatusCode() == 200);
-            assert (responseString.contains("\"location\" : \"testlocation\","));
+            assert (responseString.contains("\"location\" : \"mayfair\","));
         } finally {
             response.close();
         }
@@ -105,7 +106,7 @@ public class PotholeResourceSpecTest {
 
     @Test
     public void can_search_for_pothole_by_id() throws Exception {
-        HttpGet httpGet = new HttpGet(API_BASE_URL + "/potholes?location=testlocation");
+        HttpGet httpGet = new HttpGet(API_BASE_URL + "/potholes?location=mayfair");
         CloseableHttpResponse response = client.execute(httpGet);
 
         try {
@@ -131,7 +132,7 @@ public class PotholeResourceSpecTest {
         }
     }
 
-    @Test
+    @Test @Ignore
     public void can_delete_a_pothole_by_id() throws Exception {
         HttpDelete httpDelete = new HttpDelete(API_BASE_URL + "/potholes/" + tempPotholeKey);
         CloseableHttpResponse response = client.execute(httpDelete);
