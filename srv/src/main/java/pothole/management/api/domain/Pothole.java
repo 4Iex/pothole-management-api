@@ -31,7 +31,7 @@ public class Pothole {
     //dummy constructor
     public Pothole() {
         this.dateReported = new Date();
-        this.fixed = null;
+        this.fixed = false;
     }
 
     public String getKey(){

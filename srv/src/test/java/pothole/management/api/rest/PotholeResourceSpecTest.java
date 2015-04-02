@@ -132,7 +132,7 @@ public class PotholeResourceSpecTest {
         }
     }
 
-    @Test @Ignore
+    @Test
     public void can_delete_a_pothole_by_id() throws Exception {
         HttpDelete httpDelete = new HttpDelete(API_BASE_URL + "/potholes/" + tempPotholeKey);
         CloseableHttpResponse response = client.execute(httpDelete);
