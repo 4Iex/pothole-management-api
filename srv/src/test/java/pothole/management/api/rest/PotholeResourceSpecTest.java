@@ -110,24 +110,19 @@ public class PotholeResourceSpecTest {
             HttpEntity entity = response.getEntity();
             String responseString = EntityUtils.toString(entity, "UTF-8");
 
-            System.out.println("------------- Response -----------------");
-            System.out.println(responseString);
-
             //Turn into an object
             ObjectMapper om = new ObjectMapper();
             TypeFactory typeFactory = om.getTypeFactory();
             List<Pothole> pothole = om.readValue(responseString, typeFactory.constructCollectionType(List.class, Pothole.class));
 
-            System.out.println("------------- Pothole 0 -----------------");
-            System.out.println(pothole.get(0));
-
-            httpGet = new HttpGet(API_BASE_URL + "/potholes?id=" + pothole.get(0).getKey());
+            String keyString = pothole.get(0).getKey().replace("\"", "");
+            httpGet = new HttpGet(API_BASE_URL + "/potholes/" + keyString);
             response = client.execute(httpGet);
 
             entity = response.getEntity();
             responseString = EntityUtils.toString(entity, "UTF-8");
 
-            assert (responseString.contains("\"id\" : \"" + pothole.get(0).getKey() + "\","));
+            assert (responseString.contains(keyString));
             assert (response.getStatusLine().getStatusCode() == 200);
         } finally {
             response.close();

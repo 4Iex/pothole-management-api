@@ -80,7 +80,8 @@ public class Pothole {
             ObjectWriter ow = new ObjectMapper().writer().withDefaultPrettyPrinter();
             str = ow.writeValueAsString(this);
         } catch (JsonProcessingException ex){
-            System.out.println("There was an error parsing json.");
+            System.out.println("-- There was an error parsing json. --");
+            System.out.println(ex.toString());
         }
 
         return str;
