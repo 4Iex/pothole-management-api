@@ -29,7 +29,8 @@
             "io.restx:restx-admin:${restx.version}",
             "ch.qos.logback:logback-classic:1.0.13",
             "io.restx:restx-jongo:${restx.version}",
-            "com.fasterxml.jackson.datatype:jackson-datatype-joda:2.4.0"
+            "com.fasterxml.jackson.datatype:jackson-datatype-joda:2.4.0",
+            "org.json:json:20141113"
         ],
         "test": [
             "io.restx:restx-specs-tests:${restx.version}",
