@@ -1,24 +1,23 @@
 package pothole.management.api.rest;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.type.TypeFactory;
 import com.google.common.base.Optional;
 import org.apache.http.HttpEntity;
-import org.apache.http.NameValuePair;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
-import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import pothole.management.api.domain.Pothole;
 import restx.server.JettyWebServer;
 import restx.server.WebServer;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class PotholeResourceSpecTest {
@@ -60,9 +59,10 @@ public class PotholeResourceSpecTest {
         CloseableHttpResponse response = client.execute(httpPost);
 
         try {
-            assert (response.getStatusLine().getStatusCode() == 200);
             HttpEntity entity = response.getEntity();
             String responseString = EntityUtils.toString(entity, "UTF-8");
+
+            assert (response.getStatusLine().getStatusCode() == 200);
             assert (responseString.contains("\"location\" : \"testlocation\","));
         } finally {
             response.close();
@@ -75,15 +75,64 @@ public class PotholeResourceSpecTest {
         CloseableHttpResponse response = client.execute(httpGet);
 
         try {
-            assert (response.getStatusLine().getStatusCode() == 200);
             HttpEntity entity = response.getEntity();
             String responseString = EntityUtils.toString(entity, "UTF-8");
+
+            assert (response.getStatusLine().getStatusCode() == 200);
             assert (responseString.contains("\"location\" : \"testlocation\","));
         } finally {
             response.close();
         }
     }
 
+    @Test
+    public void can_search_for_non_existant_location_and_get_no_results() throws Exception {
+        HttpGet httpGet = new HttpGet(API_BASE_URL + "/potholes?location=emptylocation");
+        CloseableHttpResponse response = client.execute(httpGet);
+
+        try {
+            HttpEntity entity = response.getEntity();
+            String responseString = EntityUtils.toString(entity, "UTF-8");
+
+            assert (response.getStatusLine().getStatusCode() == 200);
+            assert (responseString.equals("[ ]"));
+        } finally {
+            response.close();
+        }
+    }
+
+    @Test
+    public void can_search_for_pothole_by_id() throws Exception {
+        HttpGet httpGet = new HttpGet(API_BASE_URL + "/potholes?location=testlocation");
+        CloseableHttpResponse response = client.execute(httpGet);
+
+        try {
+            HttpEntity entity = response.getEntity();
+            String responseString = EntityUtils.toString(entity, "UTF-8");
+
+            System.out.println("------------- Response -----------------");
+            System.out.println(responseString);
+
+            //Turn into an object
+            ObjectMapper om = new ObjectMapper();
+            TypeFactory typeFactory = om.getTypeFactory();
+            List<Pothole> pothole = om.readValue(responseString, typeFactory.constructCollectionType(List.class, Pothole.class));
+
+            System.out.println("------------- Pothole 0 -----------------");
+            System.out.println(pothole.get(0));
+
+            httpGet = new HttpGet(API_BASE_URL + "/potholes?id=" + pothole.get(0).getKey());
+            response = client.execute(httpGet);
+
+            entity = response.getEntity();
+            responseString = EntityUtils.toString(entity, "UTF-8");
+
+            assert (responseString.contains("\"id\" : \"" + pothole.get(0).getKey() + "\","));
+            assert (response.getStatusLine().getStatusCode() == 200);
+        } finally {
+            response.close();
+        }
+    }
 
     public static void startServer() throws Exception {
         int port = Integer.valueOf(Optional.fromNullable(System.getenv("PORT")).or(TEST_PORT));
