@@ -18,21 +18,18 @@ public class Pothole {
 
     private String location;
     Date dateReported;
-
-    //Todo: Figure out how to get this to work if fixedDate is null
-    @JsonIgnore
-    Date fixedDate;
+    Boolean fixed;
 
     public Pothole(String location){
         this.location = location;
         this.dateReported = new Date();
-        this.fixedDate = new Date();
+        this.fixed = false;
     }
 
-    //Introducing the dummy constructor
+    //dummy constructor
     public Pothole() {
         this.dateReported = new Date();
-        this.fixedDate = null;
+        this.fixed = null;
     }
 
     public String getKey(){
@@ -63,13 +60,12 @@ public class Pothole {
         return this;
     }
 
-    public String getFixedDate(){
-        SimpleDateFormat dt = this.dateFormat();
-        return dt.format(this.fixedDate);
+    public Boolean getFixed(){
+        return this.fixed;
     }
 
-    public Pothole setFixedDate(final Date fixedDate){
-        this.fixedDate = fixedDate;
+    public Pothole setFixed(final Boolean fixed){
+        this.fixed = fixed;
         return this;
     }
 
@@ -80,7 +76,8 @@ public class Pothole {
             ObjectWriter ow = new ObjectMapper().writer().withDefaultPrettyPrinter();
             str = ow.writeValueAsString(this);
         } catch (JsonProcessingException ex){
-            System.out.println("There was an error parsing json.");
+            System.out.println("-- There was an error parsing json. --");
+            System.out.println(ex.toString());
         }
 
         return str;

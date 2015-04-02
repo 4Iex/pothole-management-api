@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.type.TypeFactory;
 import com.google.common.base.Optional;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpDelete;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
@@ -27,6 +28,7 @@ public class PotholeResourceSpecTest {
     public static final String API_BASE_URL = "http://localhost:" + TEST_PORT + "/api";
 
     CloseableHttpClient client;
+    public static String tempPotholeKey;
 
     @BeforeClass
     public static void startUp() throws Exception {
@@ -110,25 +112,35 @@ public class PotholeResourceSpecTest {
             HttpEntity entity = response.getEntity();
             String responseString = EntityUtils.toString(entity, "UTF-8");
 
-            System.out.println("------------- Response -----------------");
-            System.out.println(responseString);
-
             //Turn into an object
             ObjectMapper om = new ObjectMapper();
             TypeFactory typeFactory = om.getTypeFactory();
             List<Pothole> pothole = om.readValue(responseString, typeFactory.constructCollectionType(List.class, Pothole.class));
 
-            System.out.println("------------- Pothole 0 -----------------");
-            System.out.println(pothole.get(0));
-
-            httpGet = new HttpGet(API_BASE_URL + "/potholes?id=" + pothole.get(0).getKey());
+            tempPotholeKey = pothole.get(0).getKey().replace("\"", "");
+            httpGet = new HttpGet(API_BASE_URL + "/potholes/" + tempPotholeKey);
             response = client.execute(httpGet);
 
             entity = response.getEntity();
             responseString = EntityUtils.toString(entity, "UTF-8");
 
-            assert (responseString.contains("\"id\" : \"" + pothole.get(0).getKey() + "\","));
+            assert (responseString.contains(tempPotholeKey));
             assert (response.getStatusLine().getStatusCode() == 200);
+        } finally {
+            response.close();
+        }
+    }
+
+    @Test
+    public void can_delete_a_pothole_by_id() throws Exception {
+        HttpDelete httpDelete = new HttpDelete(API_BASE_URL + "/potholes/" + tempPotholeKey);
+        CloseableHttpResponse response = client.execute(httpDelete);
+
+        try {
+            HttpEntity entity = response.getEntity();
+            String responseString = EntityUtils.toString(entity, "UTF-8");
+
+            assert (responseString.contains("\"status\" : \"deleted\""));
         } finally {
             response.close();
         }
